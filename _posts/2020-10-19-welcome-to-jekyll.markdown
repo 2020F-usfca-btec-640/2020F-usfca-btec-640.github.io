@@ -22,6 +22,18 @@ print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 ```
 
+If you want to add an image, you will need to add it to the `assets` directory, and then use the following special syntax where you want to include the image.
+
+Note that the curly braces and site URL part needs to stay as is, the part you change is the image name and the alternative text between the square brackets.
+
+```
+![useful image alternative text]({{ site.url }}/assets/the-name-of-your-image.png)
+```
+
+Here's an example:
+
+![fastq screenshot]({{ site.url }}/assets/fastq-screenshot.jpg)
+
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
