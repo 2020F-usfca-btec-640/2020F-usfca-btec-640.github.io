@@ -27,7 +27,7 @@ If you want to add an image, you will need to add it to the `assets` directory, 
 Note that the curly braces and site URL part needs to stay as is, the part you change is the image name and the alternative text between the square brackets.
 
 ```
-![useful image alternative text]({{ site.url }}/assets/the-name-of-your-image.png)
+![useful image alternative text]({{ "{{ site.url }}" }}/assets/the-name-of-your-image.png)
 ```
 
 Here's an example:
