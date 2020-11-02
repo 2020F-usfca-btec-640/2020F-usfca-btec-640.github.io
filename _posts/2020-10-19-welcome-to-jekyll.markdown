@@ -22,7 +22,7 @@ print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 ```
 
-If you want to add an image, you will need to add it to the `assets` directory, and then use the following special syntax where you want to include the image.
+If you want to add an image, you will need to add it to the assets/ directory, and then use the following special syntax where you want to include the image.
 
 Note that the curly braces and site URL part needs to stay as is, the part you change is the image name and the alternative text between the square brackets.
 
