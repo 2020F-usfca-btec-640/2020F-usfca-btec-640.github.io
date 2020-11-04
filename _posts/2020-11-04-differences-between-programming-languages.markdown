@@ -1,12 +1,20 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2020-10-19 12:54:04 -0700
+title:  "Differences between Programming Languages"
+date:   2020-11-04 12:50:28
 categories: jekyll update
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+This page introduces all programming languages and compares the different programming languages in terms of the coding style, language principles, related applications, advantages and disadvantages, as well as how the language is executed. The purpose of making this page is to let you be familiar with all these programming languages and help you choose the one you mostly want to learn and use.
 
-Jekyll requires blog post files to be named according to the following format:
+#1 List of Common Programming Languages
+- Python
+- Java/JavaScript
+- Ruby
+- Bash
+- HTML
+- C/C++
+- SQL
+
 
 `YEAR-MONTH-DAY-title.MARKUP`
 
