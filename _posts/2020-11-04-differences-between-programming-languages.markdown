@@ -6,7 +6,7 @@ categories: jekyll update
 ---
 This page introduces all programming languages and compares the different programming languages in terms of the coding style, language principles, related applications, advantages and disadvantages, as well as how the language is executed. The purpose of making this page is to let you be familiar with all these programming languages and help you choose the one you mostly want to learn and use.
 
-#1 List of Common Programming Languages
+# List of Common Programming Languages
 - Python
 - Java/JavaScript
 - Ruby
