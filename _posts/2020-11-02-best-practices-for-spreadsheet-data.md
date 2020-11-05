@@ -2,8 +2,9 @@
 layout: post
 title:  "Best Practices for Spreadsheet Data!"
 date:   2020-11-02 12:54:04 -0700
-categories: spreadsheet data
+categories: spreadsheet, notes, column, dates, CSV
 ---
+Written by: Naailah Trejo
 
 # The Importance of Organizing Spreadsheet Data
 Spreadsheets, such as Microsoft Excel, are often used by researchers in order to keep track of important experimental observations and results. Spreadsheet data entry in the laboratory is often formatted in a way that can be easily visualized by the human eye. However, this formatting is not ideal when the data needs to be analyzed by a programming language, such as R. One of the key advantages of organizing spreadsheet data is that computer programs can easily interpret and parse through the data in order to analyze it. In the next section, I will discuss some best practices for formatting spreadsheet data by hand that is both human readable and machine readable, specifically for R.
@@ -34,11 +35,11 @@ Here is an example of a README.md file that was used to document the steps taken
 
 Here is an example of a spreadsheet with  'dirty' columns:
 
-![README.md example]({{ site.url }}/assets/ft-raw-data.png)
+![raw data example]({{ site.url }}/assets/ft-raw-data.png)
 
 Now here is the above data set with 'cleaned' columns:
 
-![README.md example]({{ site.url }}/assets/ft-cleaned-data.png)
+![cleaned spreadsheet]({{ site.url }}/assets/ft-cleaned-data.png)
 
 2. **Column content**
 * There shouldn't be any empty columns in the data set. However, it is okay to have empty cells in the 'notes' column.
@@ -54,7 +55,7 @@ Now here is the above data set with 'cleaned' columns:
 
 Here is an example of three separate columns for 'year', 'month', and 'date' in an Excel spreadsheet:
 
-![README.md example]({{ site.url }}/assets/ft-date-example.png)
+![date columns example]({{ site.url }}/assets/ft-date-example.png)
 
 3. **The 'notes' column**
 * It is a best practice to include a 'notes' column in the spreadsheet because it will not be separated or lost from the data set.
@@ -65,4 +66,4 @@ Here is an example of three separate columns for 'year', 'month', and 'date' in 
 # Exporting the Cleaned Dataset
 After tidying up the spreadsheet, you want to export it as a CSV file so it can be analyzed by R. Converting the Excel spreadsheet to a CSV will also allow anyone to use the data.
 
-![README.md example]({{ site.url }}/assets/ft-export-csv.png)
+![export CSV example]({{ site.url }}/assets/ft-export-csv.png)
