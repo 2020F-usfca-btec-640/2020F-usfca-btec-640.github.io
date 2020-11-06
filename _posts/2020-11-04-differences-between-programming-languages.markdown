@@ -15,35 +15,20 @@ This page introduces all programming languages and compares the different progra
 - C/C++
 - SQL
 
+# Introduction of Common Programming Languages
+1. Python
 
-`YEAR-MONTH-DAY-title.MARKUP`
+Python is a high-level programming language. It supports a variety of programming paradigms such as functional programming, object-oriented programming and procedural programming. Python is highly extensible, which serves as a feature of adding programmable interfaces to many applications.
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+Python is an easily understandable and readable language. If you are new to the programming language, Python would be a nice choice. Unlike other languages, it uses whitespace indentation to delimit blocks.
 
-Jekyll also offers powerful support for code snippets:
-
-```ruby
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-```
-
-If you want to add an image, you will need to add it to the assets/ directory, and then use the following special syntax where you want to include the image.
-
-Note that the curly braces and site URL part needs to stay as is, the part you change is the image name and the alternative text between the square brackets.
-
-```
-![useful image alternative text]({% raw %}{{ site.url }}{% endraw %}/assets/the-name-of-your-image.png)
-```
-
-Here's an example:
-
-![fastq screenshot]({{ site.url }}/assets/fastq-screenshot.jpg)
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+# Comparison Between Different Languages
+| Languages | Features | Best For |
+| ----------- | ----------- |
+| Python |
+| Java/JavaScript |
+| Ruby |
+| Bash |
+| HTML |
+| C/C++ |
+| SQL |
