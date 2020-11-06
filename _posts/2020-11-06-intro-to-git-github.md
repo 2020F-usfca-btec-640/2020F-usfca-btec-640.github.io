@@ -72,4 +72,22 @@ Git allows you to create different branches of your project. This is helpful if 
 
 As I mentioned before, Github is a platform that allows users to create a remote repository of their projects. To get started, [here's a great guide from Github](https://guides.github.com/activities/hello-world/) on how to get set up.
 
-#### Understanding the Github workflow
+#### Pushing to Github
+
+When you're working with a local repository that's set up on Github, you want to push your local changes to the remote Github repository. This keeps both the remote Github version and your local version in sync.
+
+To push changes to Github, you'll need to have an existing repository set up on Github that is linked to your local repository. For help on setting that up, check out [Github's documentation here](https://docs.github.com/en/free-pro-team@latest/github/importing-your-projects-to-github/adding-an-existing-project-to-github-using-the-command-line) on how to complete those first steps.
+
+#### Cloning from Github
+
+You may occasionally need to take code from an existing Github repository down to your local machine that does not have an associated directory set up. This is when you want to clone the Github repository which you can learn more about [here](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
+
+#### Using pull requests
+
+You can also utilize pull requests on Github when you're collaborating with others, or even within your own personal projects. A pull request tells others that you want to merge these changes you've made to the base branch. This allows the code to stay neatly compartmentalized while team members discuss the proposed code and changes within the pull request. Once it's approved, those changes can then be merged into the base branch. To learn more about pull requests, check out [Github's documentation here](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/about-pull-requests)
+
+***
+
+And that's all for now! Hopefully this gives you a glimpse into the world of Git and Github -- two extremely useful and quintessential tools any beginner programmer should start using as soon as possible. They can save a lot of heartache and wasted energy and it's better to start off with best practices as soon as possible.
+
+Happy coding!
