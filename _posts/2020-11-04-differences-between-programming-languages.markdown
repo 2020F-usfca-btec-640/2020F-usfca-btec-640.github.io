@@ -24,11 +24,11 @@ Python is an easily understandable and readable language. If you are new to the 
 
 # Comparison Between Different Languages
 | Languages | Features | Best For |
-| ----------- | ----------- |
-| Python |
-| Java/JavaScript |
-| Ruby |
-| Bash |
-| HTML |
-| C/C++ |
-| SQL |
+| --- | --------- | ----- |
+| Python |  |  |
+| Java/JavaScript |  |  |
+| Ruby |  |  |
+| Bash |  |  |
+| HTML |  |  |
+| C/C++ |  |  |
+| SQL |  |  |S
