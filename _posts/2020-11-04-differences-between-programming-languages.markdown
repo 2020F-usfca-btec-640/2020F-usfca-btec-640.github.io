@@ -18,6 +18,7 @@ This page introduces all programming languages and compares the different progra
 # Introduction of Common Programming Languages
 1. Python
 ![python](https://beat0154.github.io/Python-Programming-Portfolio/python.png)
+
 Python is a high-level programming language. It supports a variety of programming paradigms such as functional programming, object-oriented programming and procedural programming. Python is highly extensible, which serves as a feature of adding programmable interfaces to many applications.
 
 Python is an easily understandable and readable language. If you are new to the programming language, Python would be a nice choice. Unlike other languages, it uses whitespace indentation to delimit blocks.
@@ -37,11 +38,11 @@ Some common statements and controls: `if`,  `for`,  `while`, `raise`, `break`, `
 
 # Comparison Between Different Languages
 | Languages | Features | Best For | Used By | Easy to Learn
-| --- | --------- | ----- | |
+| --- | --------- | ----- |  |  |
 | Python | multi-paradigm, simple, high readability | machine learning, data analysis, web design | Google, Pinterest, Youtube, NASA | ⭐️⭐️⭐️⭐️⭐️
-| Java/JavaScript |  |  |  |
-| Ruby |  |  |  |
-| Bash |  |  |  |
-| HTML |  |  |  |
-| C/C++ |  |  |  |
-| SQL |  |  |  |
+| Java/JavaScript |  |  |  |  |
+| Ruby |  |  |  |  |
+| Bash |  |  |  |  |
+| HTML |  |  |  |  |
+| C/C++ |  |  |  |  |
+| SQL |  |  |  |  |
