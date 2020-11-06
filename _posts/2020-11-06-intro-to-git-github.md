@@ -40,6 +40,32 @@ Here, you replace `FILE.txt` with whatever file you want to track. This `git add
 
 `git commit -m "Add commit message here"`
 
-While `git add` adds individual files to be tracked, `git commit` is basically telling Git to save the current status of all your added files. This can include
+While `git add` adds individual files to be tracked, `git commit` is basically telling Git to save the current status of all your added files. You have to add each individual file whose state you want to save, but you can commit a whole batch of file changes. Think of it as choosing which changes you want to save, adding those individually to a bucket, and then committing the entire bucket as one version or snapshot which you can refer to later.
 
-You can also use the `git status` command to see a snapshot of which files have changes
+Commit messages are intended to help you and any collaborators you might be working with better understanding what was packaged in this commit. You want to be as succinct and informative as possible. Commit messages are composed of a subject line and a optional body text.
+
+**Some hallmarks of a good commit message:**
+* Use active voice
+  * E.g. "Fix spelling errors" is better than "Spelling errors fixed"
+* Use the imperative mood
+  * This is the same tense as when you're giving a command
+  * Follows Git's default commit style
+  * If written correctly, it should seamlessly fit into the template: "If applied, your commit message will *your commit message*"
+  * E.g. "Add README.md" is better than "Added README.md"
+* Keep the subject line to <50 characters
+* Capitalize the subject online
+* Wrap the body text, if used, at 72 characters for easier legibility
+
+*For more tips on writing good commit messages, check out [Chris Beams' great post here](https://chris.beams.io/posts/git-commit/#imperative)
+
+#### Checking Git status
+
+You can also use the `git status` command to see a summary of which files are untracked, which have changes, and which have already been added and are ready to be committed. This will also let you know which branch you're on which I'll go more into detail below.
+
+#### Managing Git branches
+
+Git allows you to create different branches of your project. This is helpful if you want to, for example, retain a working copy of your code while you create a separate branch to try out something else. Branching is a neat way to keep efforts compartmentalized and allows you to chunk out your work if need be. For example, you might have your `main` branch that you retain while you work on a separate `bug-fix` branch. You can always merge branches back together to add those updates to your main branch. I won't go into too much detail here as that's another whole post in and of itself, but Git has some [helpful documentation here](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging) that explains this feature pretty well.
+
+***
+
+### How do I use Github?
