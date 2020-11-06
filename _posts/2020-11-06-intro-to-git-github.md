@@ -69,3 +69,7 @@ Git allows you to create different branches of your project. This is helpful if 
 ***
 
 ### How do I use Github?
+
+As I mentioned before, Github is a platform that allows users to create a remote repository of their projects. To get started, [here's a great guide from Github](https://guides.github.com/activities/hello-world/) on how to get set up.
+
+#### Understanding the Github workflow
