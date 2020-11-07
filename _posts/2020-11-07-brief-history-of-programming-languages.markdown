@@ -2,40 +2,10 @@
 layout: post
 title:  "Brief history of programming languages"
 date:   2020-11-7 01:54:04 -0700
-categories: 
+categories: Programming languages
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+### Ada Lovelace, Charles Babbage and the Analytical Engine
 
-Jekyll requires blog post files to be named according to the following format:
+The Analytical Engine is one of the most successful achievements of Charles Babbage. It incorporated an arithmetic logic unit, integrated memory and control flow. In 1840, Babbage gave a seminar at the University of Turin about the invention. Then, Italian engineer, Luigi Menabrea, translated the lecture into French and it was further published in the Bibliotheque universelle de Geneve in 1842. Ada Lovelace then translated the paper into English. Additionally, she included her own alphabetically labelled notes to the translation. In the last note, she included a description of an algorithm for the Analytical Engine that would compute Bernoulli numbers. Lovelace's algorithm is considered to be the first algorithm that would be specifically tailored to be implemented on a computer. Even though the engine was never completed due to lack of funding and a conflict between Babbage and his chief engineer, Ada Lovelace is often cited as the first computer programmer. 
 
-`YEAR-MONTH-DAY-title.MARKUP`
-
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-```ruby
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-```
-
-If you want to add an image, you will need to add it to the assets/ directory, and then use the following special syntax where you want to include the image.
-
-Note that the curly braces and site URL part needs to stay as is, the part you change is the image name and the alternative text between the square brackets.
-
-```
-![useful image alternative text]({% raw %}{{ site.url }}{% endraw %}/assets/the-name-of-your-image.png)
-```
-
-Here's an example:
-
-![fastq screenshot]({{ site.url }}/assets/fastq-screenshot.jpg)
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+https://upload.wikimedia.org/wikipedia/commons/a/ac/AnalyticalMachine_Babbage_London.jpg
