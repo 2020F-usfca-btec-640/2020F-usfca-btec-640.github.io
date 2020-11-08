@@ -68,4 +68,18 @@ Perl was developed by Larry Wall in 1987 as a scripting language to make report 
 
 ## Python
 
-Guido Van Rossum designed Python in 1991. The premise of Python was that is is easier to read for humans and it requires fewer lines of code in comparison to other programming languages. Nowadays Python is used for sites such as Instagram, Uber, Spotify or Dropbox. *Fun fact2* Python was named after the Monty Python, the British comedy group.
+Guido Van Rossum designed Python in 1991. The premise of Python was that is is easier to read for humans and it requires fewer lines of code in comparison to other programming languages. Nowadays Python is used for sites such as Instagram, Uber, Spotify or Dropbox. *Fun fact 2:* Python was named after the Monty Python, the British comedy group.
+
+## R
+
+R is named after the first name of authors - Ross Ihaka and Robert Gentleman. It was developed in 1993 at the University of Auckland in New Zealand. R and its libraries became a powerful tool for statistical computing and graphics. Nowadays it is widely used by data miners and statisticians for data analysis. As of September 2020, R ranks 9th in the popularity of programming languages.
+
+## Java
+
+Java was developed by Sun Microsystems in 1995 and it was originally called Oak. It is intended to 'write once, run anywhere' meaning the the code can run on all platforms that support Java, without re-compiling. At the moment of design, 3 developers James Gosling, Mike Sheridan, and Patrick Naughton had 5 goals:
+1. It must be simple, object-oriented, and familiar.
+2. It must be robust and secure.
+3. It must be architecture-neutral and portable.
+4. It must execute with high performance.
+5. It must be interpreted, threaded, and dynamic.
+Nowadays Java is everywhere, from parking meters to smartphones with 3 billion devices in use.
