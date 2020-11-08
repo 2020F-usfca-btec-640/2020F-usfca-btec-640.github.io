@@ -21,3 +21,11 @@ Maurice Wilkes and his team at University of Cambridge constructed one of the fi
 ### Autocode
 
 Alick Glennie develped Autocode at the University of Manchester in the early 1950s, which is believed to be the first compiled programming language, which means that it can be translated directly into machine code using complier - a program primarily used for translation of high-level language to a lower level in order to create an executable program.
+
+### Fortran
+
+In 1954 Fortran (which stands for Formula Translation) was created by John Backus. It was the first widely used general purpose programming language that was used for complication mathematical, scientific and statistical work. When introduced, it was met with skepticism because of delays in development and bugs but eventually became known for its efficiency. It is one of the oldest languages still used today for programs that benchmark the world's fastest computers.
+
+### AGOL and COBOL
+
+Created in 1958 and 1959 respecively. Agol stands for Algorithmic Language and was created for scientific use. It is a predecessor of Pascal, C, C++, and Java. COBOL stands for COmmon Business Oriented Language and was created by  Dr. Grace Murray Hopper. It was designed for business and it is still used in ATMs, credit card processing, telephone systems, hospital and government computers, automotive systems, and traffic signals. *Fun fact*: Pieces of COBOL source code were used in Terminator's vision display in the movie "The Terminator". 
