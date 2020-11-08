@@ -97,7 +97,7 @@ HTML is assisted by CSS (Cascading Style Sheets) and JavaScript. If you want to 
 ### HTML History
 HTML was developed my a physicist Tim Berners-Lee. His purpose of developing this system was to share documents. In the late 1980, he wrote the browser and server software. The first version was published in November 1995 in order to upload file and client-side image. In the latest version HTML 5, it was published as a W3C Recommendation. [^7]
 
-![Tim Berners](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Tim_Berners-Lee_April_2009.jpg/340px-Tim_Berners-Lee_April_2009.jpg)
+![Tim Berners](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Sir_Tim_Berners-Lee_%28cropped%29.jpg/440px-Sir_Tim_Berners-Lee_%28cropped%29.jpg)
 
 # Example of HTML
 ```
@@ -115,7 +115,6 @@ HTML was developed my a physicist Tim Berners-Lee. His purpose of developing thi
 ```
 
 ## 6. C/C++
-![C](https://mpng.subpng.com/20171217/033/letter-c-png-5a36954d474e54.1991877715135266052921.jpg)
 
 Both C and C++ are programming languages and they are both used for the application development. C is not so popular now but it has the longest history than many other programming languages. C is a structure-oriented, middle-level language. Many systems that are developed by C Language can be then integrated into other systems such as Linux and UNIX. Nowadays, many device drivers are still designed and coded by using C Language. C Language is considered as the "mother" of all programming languages, so if you are an  expert in working on C Language, it will be much easier to start learning other languages than those who are the beginners in programming languages. [^8]
 
@@ -126,9 +125,11 @@ C++ was developed based upon on C Language. C++ is more powerful and it is a hig
 - Keywords that were added into C++: bool, catch, class, false, const_cast, try, public, using, this, private...
 
 ## 7. SQL
-![SQL](https://www.macworld.co.uk/cmsdata/features/3638150/setup_learn_sql_mac_thumb800.jpg)
+![SQL](http://tugrul.dbsdataprojects.com/wp-content/uploads/sites/162/2017/03/Introduction-to-SQL.png)
 
+SQL is a domain-specific language. It is used to manage data and for stream processing. It is particularly useful for dealing with structured data. SQL has multiple features in terms of data management, including data query, data manipulation, data storage and data access control. [^10]
 
+SQL is used by many companies which they need to gather data, such as UnitedHealthCare and airline companies. In 1987, SQL was used as a standard of the International Organization for Standardization (ISO). [^10]
 
 
 # Comparison Between Different Languages
@@ -142,7 +143,7 @@ C++ was developed based upon on C Language. C++ is more powerful and it is a hig
 | HTML | easy to use, multiple website formatting versions | web developers | Apple, CyberCoders | ⭐️⭐️⭐️|
 | C | can be used in almost all systems | operating systems, software development| Apple, Microsoft | ⭐️|
 | C++ | quick processing, widely-used in software | operating systems, video games, application and software development | Google, Firefox, Blackberry OS | ⭐️⭐️ |
-| SQL |  |  |  | ⭐️⭐️⭐️ |
+| SQL | free and easily accessible, simple syntax | data processing, database management | nearly all applications | ⭐️⭐️⭐️ |
 
 
 [^1]: Wikipedia - Python
@@ -154,3 +155,4 @@ C++ was developed based upon on C Language. C++ is more powerful and it is a hig
 [^7]: Wikipedia - HTML
 [^8]: 14 Different Programming Languages and Their Uses. https://mikkegoes.com/14-programming-languages-explained/
 [^9]: Differences between C and C++. Tutorialspoint.
+[^10]: Wikipedia - SQL
