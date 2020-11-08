@@ -35,7 +35,7 @@ __Vertical Split__ (Control-b and %)
 __Horizontal Split__ (Control-b and ")
 ![tmux screenshot]({{ site.url }}/assets/tmux-04.jpg)
 
-3) Example: You can run something, detach, and it will continue running until it is complete.
+3) Example: You can run something, detach, and it will continue running until it is complete
 
 __Run Bash Script__
 ![tmux screenshot]({{ site.url }}/assets/tmux-05.jpg)
