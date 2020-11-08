@@ -42,8 +42,8 @@ FILENAME is whatever you would like to name the file. The .md extension tells
 Atom that this is a Markdown file. This will allow Atom to apply the right packages and syntax highlighting.
 
 ## Basic syntax tools
-![Steps 1-5]({{ site.url }}//assets/Syntax_Steps_1-5.png)  
-![Step 6]({{ site.url }}//assets/Syntax_Step_6.png)
+![Steps 1-5]({{ site.url }}/assets/Syntax_Steps_1-5.png)  
+![Step 6]({{ site.url }}/assets/Syntax_Step_6.png)
 
 ## Toggle preview
 To view how your markdown file will appear as an HTML, you can use **Toggle preview** to split the screen. You can do this at the very beginning of your writing process to make sure it is appearing exactly how you want.  
