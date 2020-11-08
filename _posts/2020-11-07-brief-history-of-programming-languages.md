@@ -41,3 +41,7 @@ BASIC, which stands for Beginner’s All-purpose Symbolic Instruction Code, was 
 ## Pascal
 
 Pascal was named after the French mathematician, physicist and philosopher Blaise Pascal. The language was developed in 1970 by Niklaus Wirth and created as a tool for teaching computer programming. In Apple's early years it was used as a main language for their software programming.
+
+## C
+
+C was developed in 1972 by Dennis Ritchie at Bell Labs in order to construct utilities running on Unix. This high-level language is closer to human language and it influenced a variety of other languages such as c#, Go, Java, Ruby, Perl, Python and JavaScript.
