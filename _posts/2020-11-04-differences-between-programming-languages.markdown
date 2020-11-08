@@ -61,11 +61,13 @@ Ruby was designed by Yukihiro Matsumoto in Japan. He wrote his early idea of dev
 >I was talking with my colleague about the possibility of an object-oriented scripting language. I knew Perl (Perl4, not Perl5), but I didn't like it really, because it had the smell of a toy language (it still has). The object-oriented language seemed very promising. I knew Python then. But I didn't like it, because I didn't think it was a true object-oriented language – OO features appeared to be add-on to the language. As a language maniac and OO fan for 15 years, I really wanted a genuine object-oriented, easy-to-use scripting language. I looked for but couldn't find one. So I decided to make it.
 
 ## 4. Bash
-![Bash](https://d33wubrfki0l68.cloudfront.net/306f655dcc33cc3d958cab80d78d3f2da427974c/a2bd8/img/logo/svg/full_colored_dark.svg)
+![Bash](https://www.fullstackpython.com/img/logos/bash-wide.jpg)
 
 Bash is a scripting language. It is a a command processor and it is a Unix shell. Bash can run in a text editor window where user types commands and runs to make actions. Bash can also execute commands from a shell script file.
 
 Bash was originally released in 1989 written by Brian Fox. The language was designed primarily as a free software replacement for the Bourne shell. [^5]
+
+Bash contains a variety of features, including wildcard matching, piping, control structures, command history and brace expansion, etc. It has both features from the C shell's major advantages and its own features. [^6]
 
 ### Bash Script Example
 ```
@@ -83,6 +85,7 @@ Run the file in the bash command line:
 $ bash if_example.sh
 ```
 
+Some common bash commands: `ls`, `echo`, `touch`,`mkdir`,`pwd`, `grep`, `cd`, `mv`,  `|`- Pipe, `head`, `clean`...
 # Comparison Between Different Languages
 | Languages | Features | Best For | Used By | Easy to Learn
 | --- | --------------- | --------------- | ---------------- | ----- |
@@ -102,3 +105,4 @@ $ bash if_example.sh
 [^3]: What is the difference between Java and JavaScript. https://www.educative.io/edpresso/what-is-the-difference-between-java-and-javascript
 [^4]: Wikipedia - Ruby
 [^5]: 11 Popular Programming Languages. https://www.varonis.com/blog/programming-languages/
+[^6]: Summary of bash Features. https://www.oreilly.com/library/view/learning-the-bash/1565923472/pr01s02.html
