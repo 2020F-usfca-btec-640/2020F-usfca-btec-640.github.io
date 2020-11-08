@@ -45,3 +45,11 @@ Pascal was named after the French mathematician, physicist and philosopher Blais
 ## C
 
 C was developed in 1972 by Dennis Ritchie at Bell Labs in order to construct utilities running on Unix. This high-level language is closer to human language and it influenced a variety of other languages such as c#, Go, Java, Ruby, Perl, Python and JavaScript.
+
+## SQL
+
+SQL was developed in 1972 by Donald D. Chamberlin and Raymond F. Boyce at IBM. SQL stands for Structured Query Language and it is used for viewing, changing and managing data stored in databases.
+
+## MatLab
+
+MATLAB stands for Matrix Laboratory and it was developed by Cleve Moler in 1978. It is widely used for mathematics, research and education as it is capable of creating two- and three-dimentional graphics. It allows for matrix manipulations, implementing of algorithms, plotting data and interfacing with programs written in other languages.
