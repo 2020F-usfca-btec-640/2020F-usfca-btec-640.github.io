@@ -86,17 +86,61 @@ $ bash if_example.sh
 ```
 
 Some common bash commands: `ls`, `echo`, `touch`,`mkdir`,`pwd`, `grep`, `cd`, `mv`,  `|`- Pipe, `head`, `clean`...
+
+## 5. HTML
+![HTML](https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/240px-HTML5_logo_and_wordmark.svg.png)
+
+HTML, Hypertext Markup Language, is a markup language designed for the development of web browser. You can insert and edit text, images, videos and other media via HTML. It aims to provide structured formatting so that users can clearly see what developers want to display in the webpage. Almost everything we use and see on the website is fundamentally coded in HTML. If you want to make your own website, HTML is absolutely a nice choice. Even for the complex website formatting style, HTML can still handle it.
+
+HTML is assisted by CSS (Cascading Style Sheets) and JavaScript. If you want to learn HTML, be prepared to learn CSS and JavaScript as well.  
+
+### HTML History
+HTML was developed my a physicist Tim Berners-Lee. His purpose of developing this system was to share documents. In the late 1980, he wrote the browser and server software. The first version was published in November 1995 in order to upload file and client-side image. In the latest version HTML 5, it was published as a W3C Recommendation. [^7]
+![Tim Berners](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Tim_Berners-Lee_April_2009.jpg/340px-Tim_Berners-Lee_April_2009.jpg)
+
+# Example of HTML
+```
+<!-- This is a comment -->
+<html>
+  <head>
+    <title>This is a title</title>
+  </head>
+  <body>
+    <div>
+        <p>Hello world!</p>
+    </div>
+  </body>
+</html>
+```
+
+## 6. C/C++
+![C](https://developers.redhat.com/blog/wp-content/uploads/2020/06/C_C_featuredimage.png)
+
+Both C and C++ are programming languages and they are both used for the application development. C is not so popular now but it has the longest history than many other programming languages. C is a structure-oriented, middle-level language. Many systems that are developed by C Language can be then integrated into other systems such as Linux and UNIX. Nowadays, many device drivers are still designed and coded by using C Language. C Language is considered as the "mother" of all programming languages, so if you are an  expert in working on C Language, it will be much easier to start learning other languages than those who are the beginners in programming languages. [^8]
+
+C++ was developed based upon on C Language. C++ is more powerful and it is a high-performance language but a low-level programming language. As a low-level programming language, it is relatively complicated and it is pretty hard to learn. C++ requires tons of code in order to function properly. [^8] The main difference between C and C++ is that C is procedural programming language and C++ is a combination of procedural and object-oriented programming language. [^9]
+
+### Keywords
+- Keywords in C and C++: auto, break, char, double, float, do, else, void, while, switch, register...
+- Keywords that were added into C++: bool, catch, class, false, const_cast, try, public, using, this, private...
+
+## 7. SQL
+![SQL](https://1.bp.blogspot.com/-sQL11Rr82Ho/Xpo-l3ST5sI/AAAAAAAAAdY/lbcyws57B_8nzZh1tXxj9tNkDenCeWuowCLcBGAsYHQ/s1600/SQL%2BTutorials%2B-%2BShout4Education.png)
+
+
+
+
 # Comparison Between Different Languages
 | Languages | Features | Best For | Used By | Easy to Learn
 | --- | --------------- | --------------- | ---------------- | ----- |
-| Python | multi-paradigm, simple, high readability | machine learning, data analysis, web design | Google, Pinterest, Youtube, NASA | ⭐️⭐️⭐️⭐️⭐️
-| Java | interpreted language, extensive network library | web development | Android apps | ⭐️⭐️
-| JavaScript | flexible, new front-end frameworks | front-end website, video games | almost every website | ⭐️⭐️⭐️⭐️ |
-| Ruby | simple and flexible, completely object-oriented | web development，web applications, security | Amazon | ⭐️⭐️⭐️⭐️|
-| Bash | brace expansion, command line completion, extremely useful in all IT works | IT professions | Everyone | ⭐️⭐️⭐️⭐️ |
-| HTML |  |  |  | ⭐️⭐️⭐️ |
-| C |  |  |  | ⭐️⭐️ |
-| C++ |  |  |  | ⭐️⭐️ |
+| Python | multi-paradigm, simple, high readability | machine learning, data analysis, web design | Google, Pinterest, Youtube, NASA | ⭐️⭐️⭐️⭐️⭐️|
+| Java | interpreted language, extensive network library | web development | Android apps | ⭐️⭐️|
+| JavaScript | flexible, new front-end frameworks | front-end website, video games | Almost every website | ⭐️⭐️⭐️⭐️ |
+| Ruby | simple and flexible, completely object-oriented | web development，web applications, security | Amazon | ⭐️⭐️⭐️⭐️ |
+| Bash | brace expansion, command line completion, extremely useful in all IT works | IT professions | Everyone | ⭐️⭐️⭐️⭐️|
+| HTML | easy to use, multiple website formatting versions | web developers | Apple, CyberCoders | ⭐️⭐️⭐️|
+| C | can be used in almost all systems | operating systems, software development| Apple, Microsoft | ⭐️|
+| C++ | quick processing, widely-used in software | operating systems, video games, application and software development | Google, Firefox, Blackberry OS | ⭐️⭐️ |
 | SQL |  |  |  | ⭐️⭐️⭐️ |
 
 
@@ -105,4 +149,7 @@ Some common bash commands: `ls`, `echo`, `touch`,`mkdir`,`pwd`, `grep`, `cd`, `m
 [^3]: What is the difference between Java and JavaScript. https://www.educative.io/edpresso/what-is-the-difference-between-java-and-javascript
 [^4]: Wikipedia - Ruby
 [^5]: 11 Popular Programming Languages. https://www.varonis.com/blog/programming-languages/
-[^6]: Summary of bash Features. https://www.oreilly.com/library/view/learning-the-bash/1565923472/pr01s02.html
+[^6]: Summary of Bash Features. https://www.oreilly.com/library/view/learning-the-bash/1565923472/pr01s02.html
+[^7]: Wikipedia - HTML
+[^8]: 14 Different Programming Languages and Their Uses. https://mikkegoes.com/14-programming-languages-explained/
+[^9]: Differences between C and C++. Tutorialspoint.
