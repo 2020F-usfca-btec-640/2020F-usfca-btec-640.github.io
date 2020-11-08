@@ -4,7 +4,9 @@ title:  "Brief history of programming languages"
 date:   2020-11-7 01:54:04 -0700
 categories: Programming languages
 ---
-### Brief history of programming languages
+# Brief history of programming languages
+
+Early on, programming languages were highly specialized in their tasks, operating in binary codes for the exact computer. In the 20th century, computer programming became essential in the world, running the systems in almost every device we use. Humans and machines "think" differently and computer programming allowed us to tell machines what to do. Modern programming languages use syntax that is more accessible for communicating instructions.
 
 ## Ada Lovelace, Charles Babbage and the Analytical Engine
 
@@ -83,3 +85,19 @@ Java was developed by Sun Microsystems in 1995 and it was originally called Oak.
 4. It must execute with high performance.
 5. It must be interpreted, threaded, and dynamic.
 Nowadays Java is everywhere, from parking meters to smartphones with 3 billion devices in use.
+
+
+# Constant development of programming languages
+
+With more and more demand, there is more advancement in technology and computer programming runs behind the scenes. Modern programming languages most often have roots in their older predecessors and they make modern day programmer's work simpler. Programming is necessary for business, medicine, transportation - it is ever present. Diarmuid Pigott created a genealogy tree for programming languages involving 8945 programming languages from the 18th century to the present and can be found [here](https://hopl.info/). 
+The growing need for technology will remain an important part of a modern life.
+
+
+Bibliography
+_________________________________________________________________
+* "A History of Computer Programming Languages" https://cs.brown.edu/~adf/programming_languages.html. Cited November 07, 2020
+* "A History of Computer Programming Languages" https://www.onlinecollegeplan.com/computer-programming-languages/. Cited November 07, 2020
+* "History of programming languages" https://en.wikipedia.org/wiki/History_of_programming_languages. Cited November 07, 2020
+* "A Brief History of the Computer (b.c. – 1993a.d.)" https://www.jeremymeyers.com/comp. Cited November 07, 2020
+* "Online Historical Encyclopaedia of Programming Languages" https://hopl.info/. Cited November 07, 2020
+* "The History of Programming Languages Infographic" https://www.veracode.com/blog/2013/04/the-history-of-programming-languages-infographic. Cited November 07, 2020
