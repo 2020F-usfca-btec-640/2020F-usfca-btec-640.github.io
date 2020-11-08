@@ -53,3 +53,19 @@ SQL was developed in 1972 by Donald D. Chamberlin and Raymond F. Boyce at IBM. S
 ## MatLab
 
 MATLAB stands for Matrix Laboratory and it was developed by Cleve Moler in 1978. It is widely used for mathematics, research and education as it is capable of creating two- and three-dimentional graphics. It allows for matrix manipulations, implementing of algorithms, plotting data and interfacing with programs written in other languages.
+
+## Objective-C
+
+Objective-C was developed in 1983 by Brad Cox and Tom Love and it is a general-purpose programming language that adds Smalltalk-style messaging to the language. It is the main language supported by Apple for macOS and iOs, the operating system of Apple.
+
+## C++
+
+Developed by Bjarne Stroustrup in 1983 and based on C language, C++ is one of the most widely used languages in the world. Game engines and high-performance software such as Adobe Photoshop are in C++.
+
+## Perl
+
+Perl was developed by Larry Wall in 1987 as a scripting language to make report processing easier. Nowadays it is used for Linux system administration, Web development  and network programming. Perl is actually a family of languages that include features from other languages including C, shell script, AWK and sed. Perl 5 became popular in late 1990s as a CGI scripting language, due to its regular expression and string parsing abilities.
+
+## Python
+
+Guido Van Rossum designed Python in 1991. The premise of Python was that is is easier to read for humans and it requires fewer lines of code in comparison to other programming languages. Nowadays Python is used for sites such as Instagram, Uber, Spotify or Dropbox. *Fun fact2* Python was named after the Monty Python, the British comedy group.
