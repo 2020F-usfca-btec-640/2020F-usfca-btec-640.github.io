@@ -2,7 +2,8 @@
 layout: post
 title:  "Welcome to Working with Sequence Data!"
 date:   2020-11-08
-categories:
+categories: 1. ***Overview of FASTA/FastQ***, ***Basic of counting FASTA/FASTQ entries***, ***Trimming low-quality bases***, ***Overview of Parsing FASTA/FASTQ files***
+
 ---
 ![seq_image](https://i.ytimg.com/vi/fCd6B5HRaZ8/maxresdefault.jpg)
 
