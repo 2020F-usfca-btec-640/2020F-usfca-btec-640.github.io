@@ -10,7 +10,7 @@ This tutorial answers the question, "How do I log back into a remote server and 
 
 This is adapted from some notes I used when I was several months into a bioinformatics class and wanted to pick back up where I'd left off in the headless cloud environment.
 
-Since not all setups will be identical, and having several tools setup already is a prerequisite for this workflow, see the bottom of this post for my software dependencies.
+Since not all setups will be identical, and having several tools setup already is a prerequisite for this workflow, see the bottom of this post for my dependencies.
 
 #### Login
 * Open VPN app on your PC, e.g. Global Protect
@@ -21,8 +21,8 @@ Since not all setups will be identical, and having several tools setup already i
 
 #### Shorten bash prompt
  * Often, the bash prompt becomes unwieldy in length
- * Try shortening it to just user and path: `PS1=’\u:\W\$ ‘`
- * Or, just path: `PS1=’\W\$ ‘`
+ * Try shortening it to just user and path: `PS1='\u:\W\$ '`
+ * Or, just path: `PS1='\W\$ '`
 
 #### Configure git in container
 * Find the right folder: `~`
@@ -33,6 +33,7 @@ Since not all setups will be identical, and having several tools setup already i
 * Switch to new branch `git checkout example-branch`
 * Add something, e.g. README `git add README.md`
 * Commit `git commit -m “Initialize example branch”`
+* Uncommit `git reset --soft HEAD~1`
 * Push `git push`
 * Enter GitHub username and password
 * Check `git config --list`
@@ -47,9 +48,10 @@ Since not all setups will be identical, and having several tools setup already i
  * Attach to existing session `tmux a <session if more than one>`
  * Create new session `tmux new -s session-name`
  * Kill a section `tmux kill-ses -t session-name`
- * Split view `ctrl+b`, `%`
- * Split `ctrl+b`, `”`
- * Switch panes `ctrl+b`, `ctrl+O`
+ * Split pane vertically `ctrl+b`, `%`
+ * Split pane horizontally `ctrl+b`, `”`
+ * Switch panes `ctrl+b`, `o`
+ * Close current pane `ctrl+b`, `x`
  * Detach from session `ctrl+b`, `d`
 
 #### Build a bash script in nano
@@ -67,6 +69,7 @@ Since not all setups will be identical, and having several tools setup already i
 * Session management: [Tmux][tmux]
  * Tmux is essential in bioinformatics, where genome sequence files can be massive and take hours or days to process.
  * Tmux creates a resilient work session that persists and will process your data continuously, even if the SSH connection is closed.
+ * Tmux has a great [cheat sheet][cs]
 * Container admin: [Docker][docker]
 * SSH credentials: contact your IT admin
 * Instruction: thank you to our professor, Dr. Naupaka Zimmerman, for setting up our headless cloud access, and for teaching us the content of this tutorial. Check out his extensive [GitHub page][drz].
@@ -75,5 +78,6 @@ Since not all setups will be identical, and having several tools setup already i
 [github]:[https://github.com/]
 [git-bash]:[https://gitforwindows.org/]
 [tmux]:[https://github.com/tmux/tmux/wiki]
+[cs]:[https://tmuxcheatsheet.com/]
 [docker]:[https://www.docker.com/]
 [drz]:[https://github.com/naupaka]
