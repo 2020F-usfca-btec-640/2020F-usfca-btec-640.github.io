@@ -32,7 +32,7 @@ install, however it is necessary to make your own functions at times to do
 specific tasks.
 
 # How to set up a function
-the basic outline for making a function in R is
+The basic outline for making a function in R is
 ```ruby
  `func_name <- function (argument){  
     statement`  
@@ -41,7 +41,7 @@ the basic outline for making a function in R is
 The function name can be what ever you want.  If you
 want a function that reads in a csv file containing data on different states
 and then subset that data to look at a specific state, you might name it
-"look_at_state_data".  So far we have `func_name = look_at_state_data`.
+"look_at_state_data".  So now we have `func_name = look_at_state_data`.
 
 Next we need to assign a function to that name with variables (the argument
   ).  You use the `<-` symbol to
@@ -50,8 +50,9 @@ To keep functions more dynamic, the variables should be named based on the
 type of input you will use.    
 For this example one of the variables  will be  
 `(input_file_name)` and
-`(subsetted_state)`  
-we now have the function
+`(subsetted_state)`.  
+
+We now have the function:
 ```ruby
   `look_at_state_data <- function(input_file_name,  
                                   subsetted_state){
@@ -120,3 +121,8 @@ Overall your script will look like this:
 ```
 From this script you can choose any state for the subsetted_state variable and
 get a new output csv of only the data from that state.
+
+The above is only one example of a function that you can make in R.  However,
+by using the basic template of a function, paying attention to variable names,
+and keeping track of what your end goal is, you can make a function do just
+about anything.
