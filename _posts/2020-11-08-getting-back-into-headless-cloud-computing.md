@@ -44,11 +44,13 @@ Since not all setups will be identical, and having several tools setup already i
 
 #### Manage persistent work sessions
  * List any open sessions `tmux ls`
- * Initiate new session `tmux a <session if more than one>`
- * `tmux new -s learning-tmux`
- * Split `ctrl+B, %`
- * Split `ctrl+B, ”`
- * Switch panes `ctrl+B`, `ctrl+O`
+ * Attach to existing session `tmux a <session if more than one>`
+ * Create new session `tmux new -s session-name`
+ * Kill a section `tmux kill-ses -t session-name`
+ * Split view `ctrl+b`, `%`
+ * Split `ctrl+b`, `”`
+ * Switch panes `ctrl+b`, `ctrl+O`
+ * Detach from session `ctrl+b`, `d`
 
 #### Build a bash script in nano
 * Create empty script `touch script_name.sh`
