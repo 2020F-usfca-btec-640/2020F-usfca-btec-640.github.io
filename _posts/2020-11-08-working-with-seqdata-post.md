@@ -1,41 +1,39 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2020-10-19 12:54:04 -0700
-categories: jekyll update
+title:  "Welcome to Working with Sequence Data!"
+date:   2020-11-08
+categories:
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+## **FASTA & FASTQ**
 
-Jekyll requires blog post files to be named according to the following format:
+### *FASTA*
+- This format is used to store any kind of sequence data which  does not require the per-base pair quality score  
+- FASTA sequence entries have two parts: ***a description and the sequence data, which is denoted by the greater than symbol***. ***The next part contains the sequence which begins on the next line after the description***
+### FASTA Ex
+> ENSMUG00000020122 | ENSMUST00000138518  
+CCCTCCTACGTCAATAGCTAATCGCGCTAATCGCGATCGAAACTCGCAATCGCGCTA ATCTGCTCGATCGGCTAGCTAGCCCGGGAATCGCTAGCTGACTAGCGATCGACTCG   
 
-`YEAR-MONTH-DAY-title.MARKUP`
+### *FASTQ*  
+- This sequence format is an extension on the FASTA by including the quality score for each base
+- Most commonly used format to store high-throughput sequencing data
+- ***The FASTQ format starts of with the description line beginning with @***
+- ***Then the line after contains the sequence on many lines***
+- ***The last line after the sequence contains information on the quality of the data. Each numeric base quality data is encoded utilizing the ASCII character scheme, which I will cover later***
+### FASTQ Ex
+> @DJB775P1:248:DOMDGACXX:7:1202:12362:49613
+TGCTTACGTCGGTTCGATTTCCGGGAAATTCCCGTGTCCCTAACGCTTAAGCTAAATC  +  
+JJJJJIIJJJJHIHHHGHFFFFFFCEEEEEDBD?DDDDDDDDBDDDABDCAFFFDDCH
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+### *Counting FASTA/FASTQ Entries*
+Common command-line bioinformatics  
+`$ grep-c "^>" egfr_flank.FASTA`  
+5  
+- The grep command counts the number of sequences with one line description that start with >.  
 
-Jekyll also offers powerful support for code snippets:
+`$ wc -l untreated1_chr4.fq`  
+817420 untreated1_chr4
+- The wc -l command counts the total number of lines in the file
 
-```ruby
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-```
-
-If you want to add an image, you will need to add it to the assets/ directory, and then use the following special syntax where you want to include the image.
-
-Note that the curly braces and site URL part needs to stay as is, the part you change is the image name and the alternative text between the square brackets.
-
-```
-![useful image alternative text]({% raw %}{{ site.url }}{% endraw %}/assets/the-name-of-your-image.png)
-```
-
-Here's an example:
-
-![fastq screenshot]({{ site.url }}/assets/fastq-screenshot.jpg)
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+`$ bioawk -cfastx 'END{print NR}' untreated1_chr4`  
+204355  
+- In the file untreated1_chr4 there are four lines per sequence. Using bioawk is a robust way to parse and printout the actual number of sequences in the file.
