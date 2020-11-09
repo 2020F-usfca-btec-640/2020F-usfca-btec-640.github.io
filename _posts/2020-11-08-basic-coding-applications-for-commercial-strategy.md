@@ -29,42 +29,57 @@ A revenue report that has the following columns should be saved in your `data` f
 
 #### Code to Separate Data by Territory:
 ```ruby
-# create a function to subset any territory out of the full dataset
+# add your inputs here
+# this example if for the North West region that includes the states of
+# WA, OR, NV, ID, MT, UT, WY, CO, ND, SD, NE, KS, OK, MN, WI
+# the raw data file in this example is titled "name_of_invoices_report.csv"
+input_file_name = paste0("data/RSR-Invoices-October-2020-Without-Shipping-",
+                         "Revenue.csv")
+territory_to_subset = c("WA", "OR", "NV", "ID", "MT", "UT", "WY", "CO",
+                               "ND", "SD", "NE", "KS", "OK", "MN", "WI")
+
+# create a function to subset any territory out of the full data set
 # this code should not have to change when different files and territories
 # are used
 # this should also create an output CSV file that is named based on the
-# territory subsetted
-subset_data_to_territory <- function (input_file_name, territory_to_subset) {
+# territory subsettedsubset
+subset_data_to_territory <- function(input_file_name, territory_to_subset) {
   # read in the complete csv files
   all_revenue_data <- readr::read_csv(input_file_name)
   # subset the data set to only include rows where the territory column has the
   # chosen territory name in it
   territory_data <- all_revenue_data %>%
-    dplyr::filter('territory' == territory_to_subset)
+    dplyr::filter(`territory` %in% territory_to_subset)
+
   # check that the subsetted data actually has data in it
-  if (nrow(territory_data) == 0) {
+   if (nrow(territory_data) == 0) {
     stop("ERROR, no rows matching given territory name. Did you make a typo?")
-  }
+   }
+
+  # save the territory list as a string to use in the file name
+  dat <- data.frame(Col2 = territory_to_subset)
+  print(head(dat))
+  territory_summary <- dat %>%
+    dplyr::summarise(Col2 = paste(Col2, collapse = "_"))
+  print(head(territory_summary))
 
   # save the territory data to a new csv file in your output directory
-  readr::write_csv(territory_data, paste0("output/subsetted_territories/",
-                                      tools::file_path_sans_ext(
-                                        basename(input_file_name)),
-                                      "_",
-                                      territory_to_subset,
-                                      ".csv"))
+  readr::write_csv(territory_data, paste0("output/",
+                                          tools::file_path_sans_ext(
+                                            basename(input_file_name)),
+                                          "_",
+                                          territory_summary,
+                                          ".csv"))
   return(territory_data)
 }
 
-# add your inputs here
-# this example if for the North West region that includes the states of
-# WA, OR, NV, ID, MT, UT, WY, CO, ND, SD, NE, KS, OK, MN, WI
-# the raw data file in this example is titled "name_of_invoices_report.csv"
-for (territory_to_subset in c(paste0("WA", "OR", "NV", "ID", "MT", "UT", "WY",
-                              "CO", "ND", "SD", "NE", "KS", "OK", "MN", "WI")) {
-  subset_data_to_territory(input_file_name = "data/name_of_invoices_report.csv",
-          territory_to_subset)
-}
+# load libraries used in the function
+library("dplyr")
+library("readr")
+
+# execute the function
+subset_data_to_territory(input_file_name, territory_to_subset)
+
 ```
 
 
