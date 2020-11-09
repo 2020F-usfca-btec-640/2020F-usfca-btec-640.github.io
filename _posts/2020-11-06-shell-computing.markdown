@@ -4,8 +4,6 @@ title:  "Introduction to Shell Computing"
 date:   2020-11-08 12:54:04 -0700
 categories: shell computing
 ---
-#Shell Computing
-
 **What is a shell?**
 
 When you think of a shell what may first come to mind is the outer covering of an animal such as a crab or a turtle. However, when you leave the animal world and enter into the computer world there is another kind of shell.
