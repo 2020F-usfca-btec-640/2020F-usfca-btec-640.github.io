@@ -13,10 +13,10 @@ When you want to save a snippet of code to your Git repository, a commit command
 #### A well written commit message is the best way to communicate changes in your code.
 
 ###### This includes communicating to:
-  1. Yourself
-    * The way you write messages can help you remember what you did when you go back to look at them weeks or months later.
-  2. Your collaborators
-    *  Being as descriptive as possible in just a few words can help others understand the progress of your work without confusing them.
+  1. Yourself  
+    The way you write messages can help you remember what you did when you go back to look at them weeks or months later.
+  2. Your collaborators  
+    Being as descriptive as possible in just a few words can help others understand the progress of your work without confusing them.
 
 Writing concise commit messages will make the log of your Git repository easier to navigate and the flow of a project comprehensible. Uncomplicated messages are crucial for teams to effectively collaborate in GitHub.
 
