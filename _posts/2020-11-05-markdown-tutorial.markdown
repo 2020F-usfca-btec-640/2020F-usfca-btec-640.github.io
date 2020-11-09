@@ -1,41 +1,133 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2020-10-19 12:54:04 -0700
-categories: jekyll update
+title:  "Markdown Tutorial"
+date:   2020-11-06 12:54:04 -0700
+categories: markdown tutorial
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+In this post, I will be writing a tutorial on how to create a Markdown from scratch and all that a beginner needs to know about it.
 
-Jekyll requires blog post files to be named according to the following format:
+Markdown is a lightweight Markup language with easy to use plain text formatting syntax that was created by John Gruber and Aaron Swartz in 2004.
+It is used for styling different forms of writing like formatting README files, writing messages in online discussions platform, writing content for the web and to create rich text.
 
-`YEAR-MONTH-DAY-title.MARKUP`
+## Basic Markdown Syntaxes
+Syntaxes are set of rules for grammar and spelling that defines the combination of symbols considered to be correctly structured in a particular programming language.
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-```ruby
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-```
-
-If you want to add an image, you will need to add it to the assets/ directory, and then use the following special syntax where you want to include the image.
-
-Note that the curly braces and site URL part needs to stay as is, the part you change is the image name and the alternative text between the square brackets.
+##### Headings
+Headings in Markdown are any line which is prefixed with the hashtag (#) symbol. The number of hashtags represents the heading level. A total of 6 levels can be made with 6 hashtags but in most writings, only 3 is commonly used. The syntax in block quotes are showing what the text looks like in Markdown.
 
 ```
-![useful image alternative text]({% raw %}{{ site.url }}{% endraw %}/assets/the-name-of-your-image.png)
+# Heading 1
+## Heading 2  
+### Heading 3
 ```
+# Heading 1
+## Heading 2  
+### Heading 3
 
-Here's an example:
+##### Texts
+When writing text in Markdown, you can place emphasis on a word by wrapping it in asterisks (*) or underscores (_). They can range from 1 to 3 symbols based on the extent of the emphasis. The syntax in block quotes are showing what the text looks like in Markdown.
+```
+*Item 1*  
+**Item 2**  
+__Item 3__
+```
+*Item 1*  
+**Item 2**  
+__Item 3__
 
-![fastq screenshot]({{ site.url }}/assets/fastq-screenshot.jpg)
+When adding a link to a text, the text will we wrapped with the links in square brackets [] followed by the URL to be linked in brackets (). The syntax in block quote is showing what the text looks like in Markdown.
+```
+[Atom](https://atom.io/)
+```
+[Atom](https://atom.io/)
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+When writing quotes, the text should start with the greater than sign (>) that converts the text to a block text. The syntax in block quote is showing what the text looks like in Markdown.
+```
+> On the journey to becoming you must persevere.
+```
+> On the journey to becoming you must persevere.
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+##### Images
+Images are written in similar format as when attaching a link to a text. The only difference is that the line starts with the exclamation mark (!). The syntax in block quote is showing what the text looks like in Markdown.
+```
+![octocat](https://github-atom-io-herokuapp-com.freetls.fastly.net/assets/index-octonaut-8ece2623b8966578e2414c89b7b7190cb56339d1f8b7d260adf62110ce9f39c4.svg)
+```
+![octocat](https://github-atom-io-herokuapp-com.freetls.fastly.net/assets/index-octonaut-8ece2623b8966578e2414c89b7b7190cb56339d1f8b7d260adf62110ce9f39c4.svg)
+
+##### Lists
+Lists are written with the following symbols (*, - or +) or numbers at the beginning of the line. For more formatting, the line can also be indented to create nested lists. The lists can be in ordered or unordered forms. The syntax in block quotes are showing what the text looks like in Markdown.
+```
+Ordered
+1. Item 1
+1. Item 2
+1. Item 3
+   1. Item 3a
+   1. Item 3b
+
+Unordered
+* Item 1
+* Item 2
+  * Item 2a
+  * Item 2b
+```
+Ordered
+1. Item 1
+1. Item 2
+1. Item 3
+   1. Item 3a
+   1. Item 3b
+
+Unordered
+* Item 1
+* Item 2
+  * Item 2a
+  * Item 2b
+
+##### Horizontal lines
+Horizontal lines (---) are used to denote visual separation between different sections of a text. The syntax in block quote is showing what the text looks like in Markdown.
+```
+---
+```
+---
+##### Code snippets
+Code snippets are visible to readers of an article by using the back-tick symbol around a code in a sentence. For example;
+
+```
+```r
+#read in the csv
+all_covid_data <- read.csv("path/to/my/file.csv")```
+```
+```r
+#read in the csv
+all_covid_data <- read.csv("path/to/my/file.csv")
+```
+##### Inline code
+Inline codes are written by using the back tick and/or less and greater than symbol. The syntax in block quote is showing what the text looks like in Markdown.
+```
+For an inline code you can use
+`<this>` in the text line.
+```
+For an inline code you can use
+`<this>` in the text line.
+
+## Implementations of Markdown
+Implementations of Markdown are available for a lot of programming languages and applications and also multiple platforms support this Markup language.  
+In as much as Markdown is a minimal Markup language that is read and edited with the text editors, there are specially designed editors that are beneficial in previewing the files and these are available for all major platforms. Examples are;
+1. **Atom**: A desktop application built with HTML, JavaScript, CSS, and Node.js integration. It also serves as an Integrated Development Environment (IDE).
+2. **Doxygen**: A source code documentation generator which supports Markdown with extra features.
+3. **R Studios**: An Integrated Development Environment (IDE) for R language.
+4. **Sublime Text**: A sophisticated text editor for code, markup and prose.
+5. **GitHub Flavored Markdown (GFM)**: uses its own version of the Markdown syntax that provides an additional set of useful features, many of which make it easier to work with content on GitHub.com. It is useful for rendering README files in GitHub.
+6. **Discount**: A C implementation.
+7. **PHP Markdown**: A library package that includes the PHP Markdown parser and its sibling PHP Markdown Extra with additional features.
+8. **Markdig**: A .NET library that follows the CommonMark specifications and includes a collection of extensions and the ability for the user to create their own.
+9. **MarkAPL**: A converter written in Dyalog APL language.
+10. **Showdown and Smartdown**: Markdown renderers in JavaScript.
+11. **hackmd.io**: An online Markdown editor that supports Markdown with extra features.
+12. **gomarkdown**: Markdown parser and HTML renderer in Go.
+
+## Reasons you should use Markdown.
+1. It is suitable for everything. From writing online blog posts, to creating README files for projects and more.
+2. It is platform independent because it is a plaintext file. Markdown can be created on any device running Operating System.
+3. It is portable. Files containing markdown can be viewed using virtually any application
+4. It is everywhere. Multiple websites and applications support the use of Markdown. Examples are GitHub, Reddit, R Studios etc
