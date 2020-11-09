@@ -4,6 +4,8 @@ title:  "Welcome to Working with Sequence Data!"
 date:   2020-11-08
 categories:
 ---
+![seq_image](https://i.ytimg.com/vi/fCd6B5HRaZ8/maxresdefault.jpg)
+
 ## **FASTA & FASTQ**
 
 ### *FASTA*
@@ -37,3 +39,45 @@ Common command-line bioinformatics
 `$ bioawk -cfastx 'END{print NR}' untreated1_chr4`  
 204355  
 - In the file untreated1_chr4 there are four lines per sequence. Using bioawk is a robust way to parse and printout the actual number of sequences in the file.
+
+### *Intro to Inspecting & Trimming Low-Quality Bases*
+![quality_of_read](https://lh5.googleusercontent.com/_KAKU58ax51Y/TZQtBGsweyI/AAAAAAAAADA/MVEx7AStm_o/s800/per%20base%20sequence%20quality.png)
+- When working with Illumina sequence bases' inaccuracies increases as you approach the 3' end of the sequence. If it goes unchecked it can be detrimental for the downstream analysis
+- For this there are softwares that helps us easily visualize the quality of distributions.  
+   - The most popular is the ***Java program FastQC (http://bit.ly/FastQC)***
+   - If working with R you can utilize the Bioconductor package called ***qrqc (http://bit.ly/quick-qc)***  
+- To install qrqc in R through the terminal
+  - library(BiocInstaller)
+  - biocLite(qrqc)  
+
+**Two programs that will trim low-quality bases**
+- sickle (http://github.com/najoshi/sickle)
+- seqtk (http://github.com/lh3/seqtk)
+_ sickle & seqtk can be easily installable on Mac OS X with Homebrew  
+Using the FASTQ file untreated1_chr4 as an example  
+
+  `$ sickle se -f untreated1_chr4 -t sanger -o untreated1_chr4`  
+  FastQ records kept: 202866  
+  FastQ records discarded: 1489  
+
+- Here the sickle program takes our input file through the -f command, -t is the signifies the quality type, -o generates our trimmed output  
+
+- To make things neater, we can use **trimfq** command, which takes our argument and output in one go  
+
+`$ seqtk trimfq untreated1_chr4 > untreated1_chr4.fq`  
+- We can use ggplot to produce plots like shown below. It compares how effectively sickle vs trimfq can trim low-quality bases  
+![comparing_sickle_trimfq](https://apprize.best/data/bioinformatics/bioinformatics.files/image084.jpg)  
+
+### *FASTA/FASTQ Parsing*  
+- Parsing is a method when you take one string of data and convert into a a more readable data format  
+- This is done with FASTA/FASTQ files often using the parser readfq  
+- Python has an implementation of it called *readfq.py* **(http://github.com/lh3/readfq)**  
+- The parsing routine for readfq is **readfq import readfq**  
+- Overall how readfq() works is it takes the file, and generates the FASTQ/FASTA entries. Then using readfq() it returns each FASTA/FASTQ entry containing the description of the sequence and quality of the sequence.  
+
+***Ex of beginning of code using readfq()***  
+`#!/usr/bin/env Python`  
+`# nuccont.py -- tally nucleotides in a file`  
+`import sys`  
+`from collections import Counter`  
+`from readfq import readfq`  
