@@ -1,41 +1,98 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2020-10-19 12:54:04 -0700
-categories: jekyll update
+title:  "Introduction to programming functions in R!"
+date:   2020-11-08 12:54:04 -0700
+categories: R topics
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+In this post you will learn the basics of functions in R.  This will include:
+what a function is, how to set up a function, and how to call for a function
+from another R script.
 
-Jekyll requires blog post files to be named according to the following format:
+# What is a function?
+In programming, a function is a subroutine that performs some calculation with
+given variables.  These variables are given by a program and a result is
+returned.
 
-`YEAR-MONTH-DAY-title.MARKUP`
+You can think of this type function the same way you would think about a
+mathematical one.  
+The function is a shorthand way to make different variables go through the
+same process without needing to rewrite the formula every time.
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+For instance: if you have the function y=x^2, and are given a list of x
+variables (1:5).  You are doing the same function 5 times with different
+variables giving different outputs.  Here the function would be running in
+a loop of y=1^2, y=2^2, y=3^2, y=4^2, and y=5^2.  
 
-Jekyll also offers powerful support for code snippets:
+The difference between this mathematical function and a programming function
+is that the programming function is located on its own R script and can be
+called for from any other script contained in the same directory.
+
+# How to set up a function
+the basic outline for a function in R is
+```ruby
+ `func_name <- function (argument){  
+    statement`  
+   `}`
+```
+The function name can be what ever you want the function to be called.  If you
+want a function that reads in a csv file containing data on different states,
+and then subset that data to look at one state at a time, you might name it
+"look_at_state_data".  So far we have `look_at_state_data`.
+
+Next we need to assign a function to that name with variables (the argument
+  ).  You use the `<-` symbol to
+tell R that what ever follows the symbol is named what immediately proceeds it.
+To keep functions more dynamic, the variables should be named based on the
+type of input you will use.    
+For this example one of the variables  will be  
+`(input_file_name)` and
+`(subsetted_state)`  
+we now have the function
+```ruby
+  `look_at_state_data <- function(input_file_name,  
+                                  subsetted_state){
+
+                                      }`
+```                                      
+
+
+Next you need your statement.  Here is where you read in your csv file.  It is
+ also a good idea to give the file a new variable name.  Here you might call
+ this variable "all_state_data" as this file has all of the states in it.  
+The function now looks like:
+```ruby
+  `look_at_state_data <- function(input_file_name,  
+                                  subsetted_state){
+    all_state_data <- read.csv(input_file_name)
+    }`
+```                           
+Now that the csv file is loaded into the function, you need to subset it to
+look at one state at a time.  you would need to go into the csv file to see
+how it is formatted and how the data is assigned to a state.  If the state names
+are all in one column named "state" all you have to do is use a pipe and the
+dpylr package to filter the column.
 
 ```ruby
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-```
-
-If you want to add an image, you will need to add it to the assets/ directory, and then use the following special syntax where you want to include the image.
-
-Note that the curly braces and site URL part needs to stay as is, the part you change is the image name and the alternative text between the square brackets.
-
-```
-![useful image alternative text]({% raw %}{{ site.url }}{% endraw %}/assets/the-name-of-your-image.png)
-```
-
-Here's an example:
-
-![fastq screenshot]({{ site.url }}/assets/fastq-screenshot.jpg)
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+  `look_at_state_data <- function(input_file_name,  
+                                  subsetted_state){
+    all_state_data <- read.csv(input_file_name)
+    one_state_data <- all_state_data  %>%
+      dplyr::filter(state == subsetted_state)}                                  
+    }`
+```   
+You now have a function that will go through a csv file and pars out any
+state of your choosing. The only problem is you cannot see what the function
+did.  As a last step in the function you should tell it to make a new csv
+file that only contains the data of the state you are interested in. This new
+csv file can be written to go anywhere, but for this example it will go into an
+output directory with a file name based on the state you are looking at.                       
+```ruby
+  `look_at_state_data <- function(input_file_name,  
+                                    subsetted_state){
+    all_state_data <- read.csv(input_file_name)
+    one_state_data <- all_state_data  %>%
+      dplyr::filter(state == subsetted_state)
+    write.csv(one_state_data, path = "output/individual_state_data/subsetted_state.csv")                                    
+    }`
+```   
+It is important to make sure that all of the variables you are making in this function are unique so that you do not break your script.
