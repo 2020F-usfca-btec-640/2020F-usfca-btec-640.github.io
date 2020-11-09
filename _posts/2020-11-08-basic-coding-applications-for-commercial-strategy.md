@@ -28,26 +28,15 @@ A revenue report that has the following columns should be saved in your `data` f
 * `territory` - sales representative (i.e. Debbie Vo), state (i.e. WA), territory name (i.e. North West)
 
 #### Code to Separate Data by Territory:
+We start off by creating a general function to subset any territory out of the full data set. This code should not have to change when different files and territories are indicated. This should also create an output CSV file that is named based on the defined territory.
 ```ruby
-# add your inputs here
-# this example if for the North West region that includes the states of
-# WA, OR, NV, ID, MT, UT, WY, CO, ND, SD, NE, KS, OK, MN, WI
-# the raw data file in this example is titled "name_of_invoices_report.csv"
-input_file_name = paste0("data/RSR-Invoices-October-2020-Without-Shipping-",
-                         "Revenue.csv")
-territory_to_subset = c("WA", "OR", "NV", "ID", "MT", "UT", "WY", "CO",
-                               "ND", "SD", "NE", "KS", "OK", "MN", "WI")
-
-# create a function to subset any territory out of the full data set
-# this code should not have to change when different files and territories
-# are used
-# this should also create an output CSV file that is named based on the
-# territory subsettedsubset
 subset_data_to_territory <- function(input_file_name, territory_to_subset) {
+
   # read in the complete csv files
   all_revenue_data <- readr::read_csv(input_file_name)
+
   # subset the data set to only include rows where the territory column has the
-  # chosen territory name in it
+  # chosen territory name(s) in it
   territory_data <- all_revenue_data %>%
     dplyr::filter(`territory` %in% territory_to_subset)
 
@@ -73,41 +62,21 @@ subset_data_to_territory <- function(input_file_name, territory_to_subset) {
   return(territory_data)
 }
 
-# load libraries used in the function
+```
+It is important that the appropriate libraries be loaded in prior to running the function.
+```ruby
 library("dplyr")
 library("readr")
-
-# execute the function
+```
+Next you want to define your inputs. The below example is for the North West region that includes the states of WA, OR, NV, ID, MT, UT, WY, CO, ND, SD, NE, KS, OK, MN, and WI. The raw data file in this example is titled `name_of_invoices_report.csv`.
+```ruby
+input_file_name = paste0("data/name_of_invoices_report.csv")
+territory_to_subset = c("WA", "OR", "NV", "ID", "MT", "UT", "WY", "CO",
+                               "ND", "SD", "NE", "KS", "OK", "MN", "WI")
+```
+Finally, it's time to execute the function.
+```ruby
 subset_data_to_territory(input_file_name, territory_to_subset)
 
 ```
-
-
-#### Code to Visualize Territory Revenue Over Time
-```ruby
-# produce a line plot of territory revenue over time with date
-# on the x axis and total territory revenue on the y axis
-territory_timeseries_plot <- territory_data %>%
-  group_by(date) %>%
-  summarize(revenue_per_date = sum(revenue)) %>%
-  ggplot(aes(x = lubridate::ymd(date),
-             y = revenue_per_date)) +
-  geom_line() +
-  labs(title = paste("Revenue by date for",
-                     territory_to_analyze),
-       x = "Date",
-       y = "Revenue")
-
-# extract core name for output file naming use
-core_name <- tools::file_path_sans_ext(basename(input_file_name))
-
-ggsave(plot = territory_timeseries_plot,
-       filename = paste0("output/figures/",
-                         core_name,
-                         "_",
-                         territory_to_analyze,
-                         "_",
-                         "territory_timeseries_plot.png"))
-
-territory_timeseries_plot
-```
+For this example, our result is a csv file with the name `name_of_invoices_report_WA_OR_NV_ID_MT_UT_WY_CO_ND_SD_NE_KS_OK_MN_WI.csv`. This file contains all of the revenue data from the original file for just the indicated states. With this subsetted data, you can dive deeper into territory analysis by looking at the revenue over time. This general function is a helpful tool in that it can allow you to define what `territory` is. This general variable can be defined as the city, manager, region, and more. To toggle between these different categories, simply change the chosen column name in the raw data set to `territory`.
