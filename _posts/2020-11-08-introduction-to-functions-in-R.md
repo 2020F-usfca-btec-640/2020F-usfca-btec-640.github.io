@@ -13,10 +13,10 @@ In programming, a function is a subroutine that performs some calculation with
 given variables.  These variables are given by a program and a result is
 returned.
 
-You can think of this type function the same way you would think about a
+You can think of this type of function the same way you would think about a
 mathematical one.  
 The function is a shorthand way to make different variables go through the
-same process without needing to rewrite the formula every time.
+same process without needing to rewrite the formula every time.  
 
 For instance: if you have the function y=x^2, and are given a list of x
 variables (1:5).  You are doing the same function 5 times with different
@@ -24,20 +24,24 @@ variables giving different outputs.  Here the function would be running in
 a loop of y=1^2, y=2^2, y=3^2, y=4^2, and y=5^2.  
 
 The difference between this mathematical function and a programming function
-is that the programming function is located on its own R script and can be
-called for from any other script contained in the same directory.
+that you make is that the programming function is located on its own R script
+and can be called for from any other script contained in the same directory.   
+
+There are also functions built into R's base and the packages that you can
+install, however it is necessary to make your own functions at times to do
+specific tasks.
 
 # How to set up a function
-the basic outline for a function in R is
+the basic outline for making a function in R is
 ```ruby
  `func_name <- function (argument){  
     statement`  
    `}`
 ```
-The function name can be what ever you want the function to be called.  If you
-want a function that reads in a csv file containing data on different states,
-and then subset that data to look at one state at a time, you might name it
-"look_at_state_data".  So far we have `look_at_state_data`.
+The function name can be what ever you want.  If you
+want a function that reads in a csv file containing data on different states
+and then subset that data to look at a specific state, you might name it
+"look_at_state_data".  So far we have `func_name = look_at_state_data`.
 
 Next we need to assign a function to that name with variables (the argument
   ).  You use the `<-` symbol to
@@ -95,4 +99,24 @@ output directory with a file name based on the state you are looking at.
     write.csv(one_state_data, path = "output/individual_state_data/subsetted_state.csv")                                    
     }`
 ```   
-It is important to make sure that all of the variables you are making in this function are unique so that you do not break your script.
+It is important to make sure that all of the variables you are making in this
+function are unique so that you do not break your script.
+
+# How to call for a function from another script
+Once you make a function, the easy part is calling for the function from
+somewhere else.  You do this through loading your function on the other script
+through the built in source function.  Using source you then write out the
+path to the function you have created.
+`source("code/what ever the function's script file name was")`
+
+Next you would call for the function and supply what the variables are.  
+`(input_file_name = your original csv file)`
+`(subsetted_state = state of choice)`
+
+Overall your script will look like this:  
+```ruby
+`look_at_state_data(input_file_name = "path to csv",
+                    subsetted_state = "California")`
+```
+From this script you can choose any state for the subsetted_state variable and
+get a new output csv of only the data from that state.
