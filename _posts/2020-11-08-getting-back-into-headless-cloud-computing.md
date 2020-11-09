@@ -55,18 +55,23 @@ Since not all setups will be identical, and having several tools setup already i
 * Open script `nano script_name.sh`
 * Proceed with your analysis!
 ---------
-#### My dependencies for this tutorial
+#### Dependency information for this tutorial
 * Institutional login: [University of San Francisco][usf]
+ * The University of San Francisco hosts several servers available to graduate and undergraduate students. I am a biotechnology Master's student, class of 2022.
 * VPN: [Global Protect][global-protect] for Windows 10
+ * Many institutions require virtual private networks to login to their servers, allowing your workstation to imitate a local machine for cluster access.
 * git version control: [GitHub][github]
 * bash shell: [Git Bash][git-bash]
 * Session management: [Tmux][tmux]
+ * Tmux is essential in bioinformatics, where genome sequence files can be massive and take hours or days to process.
+ * Tmux creates a resilient work session that persists and will process your data continuously, even if the SSH connection is closed.
 * Container admin: [Docker][docker]
-* ssh credentials: contact your IT admin
-
+* SSH credentials: contact your IT admin
+* Instruction: thank you to our professor, Dr. Naupaka Zimmerman, for setting up our headless cloud access, and for teaching us the content of this tutorial. Check out his extensive [GitHub page][drz].
 [usf]: https://www.usfca.edu/arts-sciences/graduate-programs/biotechnology
 [global-protect]: https://www.paloaltonetworks.com/products/globalprotect
 [github]:[https://github.com/]
 [git-bash]:[https://gitforwindows.org/]
 [tmux]:[https://github.com/tmux/tmux/wiki]
 [docker]:[https://www.docker.com/]
+[drz]:[https://github.com/naupaka]
