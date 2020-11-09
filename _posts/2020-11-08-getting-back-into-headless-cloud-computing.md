@@ -17,7 +17,7 @@ Since not all setups will be identical, and having several tools setup already i
  * Enter your institutional account's username and password
 * Open Git Bash and initialize ssh connection
  * Provide server-specific username and password, given to you by your instructor or IT admin for cloud computing
- * e.g. `ssh Last_Name_Example@server_name.insitution.edu -p 8036 > provided-password`
+ * e.g. `ssh Last_Name_Example@server_name.insitution.edu -p 8036`; enter provided password
 
 #### Shorten bash prompt
  * Often, the bash prompt becomes unwieldy in length
