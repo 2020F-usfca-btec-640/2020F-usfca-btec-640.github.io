@@ -4,6 +4,7 @@ title:  "Basic Coding Applications for Commercial Strategy"
 date:   2020-11-08 12:54:04 -0700
 categories: sales commercial strategy revenue cogs margins applications
 ---
+By, Debbie Vo
 
 Every department for every company can benefit from data analysis. Coding allows large data sets to be manipulated and presented in a helpful way. For all code, the goal is that you start with raw information and you end up with useful information derived from the raw form. In genetics, you may have genome sequences as your starting material that are used to determine the similarities and differences between the DNA for different samples. This analysis has many different applications, including the determination of mutations in cancer cells.
 
