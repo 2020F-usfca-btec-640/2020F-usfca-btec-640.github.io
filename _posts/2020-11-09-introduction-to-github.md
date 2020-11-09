@@ -1,41 +1,25 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2020-10-19 12:54:04 -0700
-categories: jekyll update
+title:  "Introduction to GitHub!"
+date:   2020-11-09 12:54:04 -0700
+categories: GitHub Introduction Basics
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+# Introduction to GithHub
 
-Jekyll requires blog post files to be named according to the following format:
+![GitHub Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Font_Awesome_5_brands_github.svg/124px-Font_Awesome_5_brands_github.svg.png)
 
-`YEAR-MONTH-DAY-title.MARKUP`
+Hello! In this blog post I will be going through a brief introduction to GitHub. I’ll be touching on what GitHub is, what it’s used for, and how useful it can be to anyone that codes! Hopefully if you are reading this you find it helpful!
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+## What is GitHub
+GitHub is a that is used by software developers that allows for ***collaboration*** on projects and also provides a platform for ***version control***. Below I briefly describe why the ability to collaborate and version control are important. Further on in the post I will go into more detail about each aspect.
+  * **Collaboration:** You can push projects that you are working on from your computer to GitHub. This allows other that you are working with to see what you have done to the code for your project.
+  * **Version Control:** Having a way to keep track of what edits you made to your code and when can be very useful when your code get broken. As long as you have a recent commit on GitHub, you can go back and
 
-Jekyll also offers powerful support for code snippets:
+## A Short History Lesson
+GitHub was founded by 
 
-```ruby
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-```
+## Important Features in GitHub
 
-If you want to add an image, you will need to add it to the assets/ directory, and then use the following special syntax where you want to include the image.
+## Brief walkthrough of how it is used for version control
 
-Note that the curly braces and site URL part needs to stay as is, the part you change is the image name and the alternative text between the square brackets.
-
-```
-![useful image alternative text]({% raw %}{{ site.url }}{% endraw %}/assets/the-name-of-your-image.png)
-```
-
-Here's an example:
-
-![fastq screenshot]({{ site.url }}/assets/fastq-screenshot.jpg)
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+## Overview of how it is used for collaboration
