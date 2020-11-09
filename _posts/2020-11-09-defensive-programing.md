@@ -96,7 +96,7 @@ Troubleshooting can take a lot of time, and it is probably part of every program
 
 "Defensive programming is good programming". This phrase caught my attention the first time I heard it, and now I think it might be one of the most important things I have learned about programming. When writing a code that will later be used with different input data or by someone else, it is important to think about how you can make things easier for the user. Defensive programming helps programmers write codes that are prepared to deal with any unexpected circumstances, and even provide guidance on how to solve the issue. It helps to create self-checking codes that can be widely used, and I believe that is a beautiful thing. So, let's use defensive programming and make the coding world a better place!
 
-I hope you enjoyed this post. Here are some sources with more interesting information about defensive programming and some more examples of defensive programming methods:
+I hope you enjoyed this post. Here are some sources with more interesting information about defensive programming, and some more examples of defensive programming methods:
 
 [Programming with Python: defensive programming](https://swcarpentry.github.io/python-novice-inflammation/10-defensive/index.html)  
 [The Ten Rules of Defensive Programming in R](https://www.r-bloggers.com/2018/07/the-ten-rules-of-defensive-programming-in-r/)  
