@@ -12,9 +12,9 @@ When you want to save a snippet of code to your Git repository, a commit command
 
 #### A well written commit message is the best way to communicate changes in your code.
 
-###### This includes communicating to:
+##### This includes communicating to:
   1. Yourself  
-    The way you write messages can help you remember what you did when you go back to look at them weeks or months later.
+    The way you write messages can help you remember why you did something when you go back and look at them weeks or months later.
   2. Your collaborators  
     Being as descriptive as possible in just a few words can help others understand the progress of your work without confusing them.
 
@@ -59,7 +59,7 @@ However when one 50 character line isn't enough to explain, you'll need to add a
 ```
 Add subject here and do not exceed 50 characters
 
-Add body here and separate with a blank line.
+Add body here separated with a blank line.
 Wrap text so body does not exceed 72 characters.
 ```
 #### The easiest and fastest way to add and commit your work is to use command line arguments.
