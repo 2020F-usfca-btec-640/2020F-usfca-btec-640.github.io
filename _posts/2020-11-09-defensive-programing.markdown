@@ -7,11 +7,11 @@ categories: defensive programming
 Title:  Defensive programming - what it is and why it is important  
 Author: Gabrielly Lunkes
 
-Often times, a piece of code is used by different people, not only the person who created it. Also, codes can frequently be used to process different types of data. In my opinion, this flexibility to use the same code to process different datasets is one of the greatest things about coding. However, how is it possible to write a code in a way that other programmers would be able navigate through, and even use it with different types of input without spending endless hours trying to figure out how things work? Yes, you guessed it, the answer is in defensive programming.
+Often times, a piece of code is used by different people, not only the person who created it. Also, codes can frequently be used to process different types of data. In my opinion, this flexibility to use the same code to process different datasets is one of the greatest things about coding. However, how is it possible to write a code in a way that other programmers would be able to navigate through and even use it with different types of input without spending endless hours trying to figure out how things work? Yes, you guessed it, the answer is in defensive programming.
 
 1. What is defensive programming?  
 
-In short, defensive programming is a way to prevent bugs from happening by including progress checkpoints in your code. This can be done by adding guard statements and assertions in your code that check if certain requirements are met and return a statement. The statements are usually helpful sentences that identify which requirement was not met and can even tell you what you should do to fix it. Here is an example:
+In short, defensive programming is a way to make sure that your code works even when given incorrect output. This can be done by adding guard statements and assertions in your code that check if certain requirements are met and return a statement. The statements are usually helpful sentences that identify which requirement was not met and can even tell you what you should do to fix it. Here is an example:
 
 ‘’’’’’’
 if (nrow(input_data) == 0) {
@@ -51,7 +51,7 @@ public void CreateAppointment(DateTime dateTime)
     /* Create an appointment */
 }
 
-Here, the code will only make the appointment if the input date is correct, not too early or too late.
+Here, the code will only make the appointment if the the given date is correct, not too early or too late.
 
 •	Nulls
 
@@ -90,6 +90,10 @@ Troubleshooting can take a lot of time, and it is probably part of every program
 
 4. Final thoughts  
 
-- Give one example and cite a website with more.
+"Defensive programming is good programming". This phrase caught my attention the first time I heard it, and now I think it might be one of the most important things I have learned about programming. When writing a code that will later be used with different input data or by someone else, it is important to think about how you can make things easier for the user. Defensive programming helps programmers write codes that are prepared to deal with any unexpected circumstances, and even provide guidance on how to solve the issue. It helps to create self-checking codes that can be widely used, and that is a beautiful thing.
+
+I hope you enjoyed this post. Here are some sources with more interesting information about defensive programming and some more examples of defensive programming methods:
+
+
 
 5. References
