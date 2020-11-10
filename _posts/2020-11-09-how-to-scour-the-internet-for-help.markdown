@@ -4,38 +4,23 @@ title:  "How to Scour the Internet for Help"
 date:   2020-11-09 12:54:04 -0700
 categories: jekyll update
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-Jekyll requires blog post files to be named according to the following format:
+![computer_gun](https://thumbs.dreamstime.com/z/mad-computer-17134750.jpg)
 
-`YEAR-MONTH-DAY-title.MARKUP`
+Coding is hard.
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+Especially when you're just starting out. It can daunt you when there sits a blinking, unmoving cursor staring at you as the error messages pile up. Making progress is tough, however many resources exist on the internet to help you. This post covers some tips for evaluating your problems and a couple of sites you can refer to for assistance.
 
-Jekyll also offers powerful support for code snippets:
+# Before Asking for Help
 
-```ruby
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-```
+## Before You Start
 
-If you want to add an image, you will need to add it to the assets/ directory, and then use the following special syntax where you want to include the image.
+It helps to create a plan for what you hope to code before you actually code it. This simply involves writing out your code on paper instead of on the computer. Doing this helps you think through your process and lets you see what the entire project requires for completion.  
 
-Note that the curly braces and site URL part needs to stay as is, the part you change is the image name and the alternative text between the square brackets.
+## Problem Arose
 
-```
-![useful image alternative text]({% raw %}{{ site.url }}{% endraw %}/assets/the-name-of-your-image.png)
-```
+It is tempting to immediately start frenetically googling for your salvation. The results found will often not help you or even be useful. Asking the correct questions make all the difference when seeking answers.
 
-Here's an example:
+But first, you should take a small break. Go on a walk, eat a snack or watch a small video just to clear your mind. Fresh eyes can evaluate the problem easier than when you are frustrated. Ideally this would lead you to the answer right away but in case that it still eludes you, this can at least let you see the problem more clearly.
 
-![fastq screenshot]({{ site.url }}/assets/fastq-screenshot.jpg)
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+One thing that helps here as well is if you commented on your code. Writing what your code does  with the "#" character will help you and anyone else looking at your code. Especially if your small break becomes a long one. Forgetting what you were doing will only make it harder.
