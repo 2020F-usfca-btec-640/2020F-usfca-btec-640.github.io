@@ -24,3 +24,14 @@ It is tempting to immediately start frenetically googling for your salvation. Th
 But first, you should take a small break. Go on a walk, eat a snack or watch a small video just to clear your mind. Fresh eyes can evaluate the problem easier than when you are frustrated. Ideally this would lead you to the answer right away but in case that it still eludes you, this can at least let you see the problem more clearly.
 
 One thing that helps here as well is if you commented on your code. Writing what your code does  with the "#" character will help you and anyone else looking at your code. Especially if your small break becomes a long one. Forgetting what you were doing will only make it harder.
+
+```r
+# print to write hello world
+print(Hello World!)
+```
+
+# Looking for Help
+
+## Google
+
+![google.png] (https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png)
