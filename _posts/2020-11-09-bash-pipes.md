@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Bash pipes: more useful than Mario's"
-date:   2020-10-19 12:54:04 -0700
+date:   2020-11-09 12:54:04 -0700
 categories: bash pipes
 ---
 You’re a budding bioinformatician and you are learning all of these amazing commands in bash to explore and modify your data. But you want a way to combine these commands without creating an endless amount of output files to work upon. Or you are trying to modify your data in a particular way, but you can't find that one *perfect* program that would accomplish your task.
