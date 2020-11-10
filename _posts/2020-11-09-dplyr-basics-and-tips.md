@@ -1,41 +1,68 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "The `dplyr` Package Basics"
 date:   2020-11-09 12:54:04 -0700
-categories: jekyll update
+categories: dplyr basics package introduction
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+# The `dplyr` Package Basics
+By. Kyle Pratt  
+November 11th, 2020
 
-Jekyll requires blog post files to be named according to the following format:
+#### What is `dplyr`?
+`dplyr` is a package in R that contains functions for quick and easy data manipulation. The `dplyr` base package works on a data frame.
 
-`YEAR-MONTH-DAY-title.MARKUP`
+#### 5 Verbs to Describe the Uses of `dplyr`
+1. **Select** certain columns of data  
+2. **Filter** to select certain rows.
+3. **Arrange** the rows of data.
+4. **Mutate** the data to contain new columns.
+5. **Summarize** pieces of the data.  
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+#### What is the 'pipe' and how is it used?
+The 'pipe' that is used in `dplyr` originally comes from the `magrittr` package and is represented as so: `%>%`. It allows for the user to simply pass the altered data frame to another function and continuously alter the data.
 
-Jekyll also offers powerful support for code snippets:
+Another way to think of the pipe is saying the word then in between the functions. So if you wanted to first `group_by()` then `summarize()`. You would us the `%>%` in replacement of the word "then".
 
-```ruby
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+#### Examples of functions
+1. `arrange()`
+  * This function arrange the rows of a data frame by the values of selected columns
+  * It takes a data frame as the first variable passed to it and variables or functions as inputs as well
+2. `tally()`
+  * This function will count the unique values of 1 or more variables
+  * It takes a data frame as the first variable passed to it and variables to group by
+3. `select()`
+  * This function will subset columns using their names and types
+  * It takes a data frame and one or more expressions to select
+4. `summarize()`
+  * This function will create a new data frame with a row for each combination of grouping variables
+  * It takes a data frame and name value pairs or summary functions
+5. `group_by()`
+  * This function will group by one or more variables
+  * It takes a data frame and variables or computations to group by
+6. `filter()`
+  * This function will subset a data frame and retain all rows satisfying the condition
+  * It takes a data frame and expressions that return a logical value
+
+Here is some sample code using these functions.
+
+```r
+count_cities_counties_by_type <- state_data %>%
+  select(geo_type, region, transportation_type) %>%
+  group_by(geo_type, transportation_type) %>%
+  tally()
 ```
+This code chunk would take the `state_data` data frame THEN select out the columns for `geo_type`, `region` and `transportation_type`THEN group by the unique `geo_type` and `transportation_type` THEN tally the unique values for each type. This is all stored in the variable `count_cities_counties_by_type`.
 
-If you want to add an image, you will need to add it to the assets/ directory, and then use the following special syntax where you want to include the image.
-
-Note that the curly braces and site URL part needs to stay as is, the part you change is the image name and the alternative text between the square brackets.
-
+```r
+state_data <- all_covid_data %>%
+    dplyr::filter(`sub-region` == state_to_analyze)
 ```
-![useful image alternative text]({% raw %}{{ site.url }}{% endraw %}/assets/the-name-of-your-image.png)
-```
+This code chunk would take the `all_covid_data` THEN filter out the rows where the `sub-region` column is equal to the variable `state_to_analyze`. Then store those filtered results in the varaible `state_data`.
 
-Here's an example:
+See the cheat sheet here for more tips and a graphical representation of some functions:
+![dplyr cheat sheet]({% raw %}{{ site.url }}{% endraw %}/assets/data-transformation.pdf)
 
-![fastq screenshot]({{ site.url }}/assets/fastq-screenshot.jpg)
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+#### References
+1. https://dplyr.tidyverse.org/index.html
+2. https://github.com/rstudio/cheatsheets/blob/master/data-transformation.pdf
+3. https://seananderson.ca/2014/09/13/dplyr-intro/
