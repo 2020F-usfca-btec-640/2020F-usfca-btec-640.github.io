@@ -44,6 +44,6 @@ However, casting a large net gets a large amount of answers so using the search 
 
 ## Online Communities
 
-![stack overflow](https://www.google.com/url?sa=i&url=https%3A%2F%2Fdigital.hbs.edu%2Fplatform-digit%2Fsubmission%2Fstack-overflow-quality-through-community-control%2F&psig=AOvVaw3SocfqdrP2-HTXl30g32ps&ust=1605076926632000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCICLptWv9-wCFQAAAAAdAAAAABAK)
+![stack overflow](https://img2.pngio.com/filestack-overflow-logopng-wikimedia-commons-stack-overflow-png-885_233.png)
 
 Joining an online development community can make finding answers easier since you get access to other people who may help you. Stack Overflow dominates the minds of many programmers as a resource. Here people can ask questions under specific tags and receive answers from other programmers. Users rate the answers based on usefulness and the question-asker selects the best answer for themselves.  
