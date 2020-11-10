@@ -5,7 +5,7 @@ date:   2020-11-09 12:54:04 -0700
 categories: jekyll update
 ---
 
-![computer_gun](https://thumbs.dreamstime.com/z/mad-computer-17134750.jpg)
+![computer_gun.jpeg](https://thumbs.dreamstime.com/z/mad-computer-17134750.jpg)
 
 Coding is hard.
 
@@ -44,6 +44,14 @@ However, casting a large net gets a large amount of answers so using the search 
 
 ## Online Communities
 
-![stack overflow](https://img2.pngio.com/filestack-overflow-logopng-wikimedia-commons-stack-overflow-png-885_233.png)
+![stack overflow.png](https://img2.pngio.com/filestack-overflow-logopng-wikimedia-commons-stack-overflow-png-885_233.png)
 
-Joining an online development community can make finding answers easier since you get access to other people who may help you. Stack Overflow dominates the minds of many programmers as a resource. Here people can ask questions under specific tags and receive answers from other programmers. Users rate the answers based on usefulness and the question-asker selects the best answer for themselves.  
+Joining an online development community can make finding answers easier since you get access to other people who may help you. [Stack Overflow][stack-overflow] dominates the minds of many programmers as a resource. Here people can ask questions under specific tags and receive answers from other programmers. Users rate the answers based on usefulness and the question-asker selects the best answer for themselves.
+
+Another option is Reddit. The subreddit [r/learnprogramming][r/learnprogramming] contains many resources that can lead you where ever you might need to go to figure out your issue. These sites feature real, live people and they want their time and expertise respected so if you use them, use a professional tone, read the FAQs and search for your problem as there is a good chance it has already been answered.
+
+
+
+
+[stack-overflow]:     https://stackoverflow.com/
+[r/learnprogramming]: https://www.reddit.com/r/learnprogramming/
