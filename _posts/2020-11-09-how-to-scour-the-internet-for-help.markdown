@@ -40,7 +40,9 @@ Google has revolutionized the way we look for information. After all, "googling"
 
 ![google.png](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png)
 
-However, casting a large net gets a large amount of answers so using the search engine properly is important. When using google try to search for the error message you got from the program. Or if you are trying to find a technique include the coding language you are using like "r" or "bash" to narrow the results. This not only helps your ability to get coding help online but also your ability to research effectively.
+However, casting a large net gets a large amount of answers so using the search engine properly is important. It's not uncommon to find the remnants of a long abandoned thread. When using google try to search for the error message you got from the program. Or if you are trying to find a technique include the coding language you are using like "r" or "bash" to narrow the results. This not only helps your ability to get coding help online but also your ability to research effectively.
+
+![xckd](https://ksr-ugc.imgix.net/assets/000/305/252/2776209b9d9d72eef92d0910e8c72e13_original.png?ixlib=rb-1.1.0&w=680&fit=max&v=1355490707&auto=format&gif-q=50&lossless=true&s=a41bfba8cef02765767c0144ade45151)
 
 ## Online Communities
 
@@ -48,10 +50,24 @@ However, casting a large net gets a large amount of answers so using the search 
 
 Joining an online development community can make finding answers easier since you get access to other people who may help you. [Stack Overflow][stack-overflow] dominates the minds of many programmers as a resource. Here people can ask questions under specific tags and receive answers from other programmers. Users rate the answers based on usefulness and the question-asker selects the best answer for themselves.
 
-Another option is Reddit. The subreddit [r/learnprogramming][r/learnprogramming] contains many resources that can lead you where ever you might need to go to figure out your issue. These sites feature real, live people and they want their time and expertise respected so if you use them, use a professional tone, read the FAQs and search for your problem as there is a good chance it has already been answered.
+![reddit.png](https://logodownload.org/wp-content/uploads/2018/02/reddit-logo-4.png)
 
+Another option is Reddit. The subreddit [r/learnprogramming][r/learnprogramming] contains many resources that can lead you where ever you might need to go to figure out your issue. These sites feature real, live people and they want their time and expertise respected so if you use them, use a professional tone, read the FAQs and search for your problem first as there is a good chance it has already been answered.
+![Youtube.png](https://www.logo.wine/a/logo/YouTube/YouTube-Logo.wine.svg)
+Less of a community and more of a well of information; there is [Youtube][you-tube]. People upload free educational videos all the time. Searching "programming tutorials" plus a language or technique might show you what you wanted. These videos address certain problems more readily than others; more difficult ones require more effort and resources.
 
+![Discord.jpg](https://cdn.mmos.com/wp-content/uploads/2017/06/discord-banner.jpg)
 
+One last addition is Discord. Here people form their own communities much like Reddit. But you need an invite or link in order to join. Once again, since people work on Discord servers in their free time you should respect that and follow any rules they have in place.
+
+## Student Life
+
+As a student, you are granted some benefits to your education. You have a professor, and sometimes TAs, to help guide you through your programming class. Take advantage of any office hours available when offered. The library has a wealth of resources itself and may provide programming books that can expand your options. Your peers can often be a resource as well since they can ask questions you want to know as well or may offer to help since teaching others enforces their own knowledge. This works the other way around as well. You paid for these resource so you might as well use them.
+
+## Wrap Up
+
+Running into a wall feels bad but getting around that wall is an important skill every coder needs to learn. While it can often seem daunting, we improve from our struggles and there is no shame in asking for help. 
 
 [stack-overflow]:     https://stackoverflow.com/
 [r/learnprogramming]: https://www.reddit.com/r/learnprogramming/
+[you-tube]:           https://www.youtube.com/
