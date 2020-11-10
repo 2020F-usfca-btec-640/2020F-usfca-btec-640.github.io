@@ -34,4 +34,16 @@ print(Hello World!)
 
 ## Google
 
-![google.png] (https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png)
+Let's begin with the obvious: Google.
+
+Google has revolutionized the way we look for information. After all, "googling" is now a common verb used to look things up on the internet.
+
+![google.png](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png)
+
+However, casting a large net gets a large amount of answers so using the search engine properly is important. When using google try to search for the error message you got from the program. Or if you are trying to find a technique include the coding language you are using like "r" or "bash" to narrow the results. This not only helps your ability to get coding help online but also your ability to research effectively.
+
+## Online Communities
+
+![stack overflow](https://www.google.com/url?sa=i&url=https%3A%2F%2Fdigital.hbs.edu%2Fplatform-digit%2Fsubmission%2Fstack-overflow-quality-through-community-control%2F&psig=AOvVaw3SocfqdrP2-HTXl30g32ps&ust=1605076926632000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCICLptWv9-wCFQAAAAAdAAAAABAK)
+
+Joining an online development community can make finding answers easier since you get access to other people who may help you. Stack Overflow dominates the minds of many programmers as a resource. Here people can ask questions under specific tags and receive answers from other programmers. Users rate the answers based on usefulness and the question-asker selects the best answer for themselves.  
