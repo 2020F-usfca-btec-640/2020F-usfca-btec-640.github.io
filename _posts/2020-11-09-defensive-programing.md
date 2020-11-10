@@ -7,7 +7,7 @@ categories: defensive programming
 # **Defensive programming - what it is and why it is important**
 Gabrielly Lunkes  
 
-![](https://philippegroarke.com/img/2018/defensive.png)
+![Dwight Schrute from The Office show saying "HE PROTEC"]({{site.url }}https://philippegroarke.com/img/2018/defensive.png)
 
 Often times, a piece of code is used by different people, not only the person who created it. Also, codes can frequently be used to process different types of data. In my opinion, this flexibility to use the same code to process different datasets is one of the greatest things about coding. However, how is it possible to write a complex code in a way that other users would be able to easily navigate through and even use it with different types of input without bugs? Yes, you guessed it, the answer is in defensive programming.
 
