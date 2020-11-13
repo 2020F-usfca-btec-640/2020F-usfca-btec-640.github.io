@@ -27,11 +27,11 @@ Alick Glennie develped Autocode at the University of Manchester in the early 195
 
 ## Fortran
 
-In 1954 Fortran (which stands for Formula Translation) was created by John Backus. It was the first widely used general purpose programming language that was used for complication mathematical, scientific and statistical work. When introduced, it was met with skepticism because of delays in development and bugs but eventually became known for its efficiency. It is one of the oldest languages still used today for programs that benchmark the world's fastest computers.
+In 1954 Fortran (which stands for Formula Translation) was created by John Backus. It was the first widely used general-purpose programming language that was used for complication mathematical, scientific and statistical work. When introduced, it was met with skepticism because of delays in development and bugs but eventually became known for its efficiency. It is one of the oldest languages still used today for programs that benchmark the world's fastest computers.
 
 ## AGOL and COBOL
 
-Created in 1958 and 1959 respectively. Agol stands for Algorithmic Language and was created for scientific use. It is a predecessor of Pascal, C, C++, and Java. COBOL stands for COmmon Business Oriented Language and was created by  Dr. Grace Murray Hopper. It was designed for business and it is still used in ATMs, credit card processing, telephone systems, hospital and government computers, automotive systems, and traffic signals. *Fun fact*: Pieces of COBOL source code were used in Terminator's vision display in the movie "The Terminator".
+Created in 1958 and 1959 respectively. Agol stands for Algorithmic Language and was created for scientific use. It is a predecessor of Pascal, C, C++, and Java. COBOL stands for COmmon Business Oriented Language and was created by Dr. Grace Murray Hopper. It was designed for business and it is still used in ATMs, credit card processing, telephone systems, hospital and government computers, automotive systems, and traffic signals. *Fun fact*: Pieces of COBOL source code were used in Terminator's vision display in the movie "The Terminator".
 
 Late 1960s to late 1970s flourished with programming languages, many of which are still used today.
 
@@ -65,11 +65,11 @@ Developed by Bjarne Stroustrup in 1983 and based on C language, C++ is one of th
 
 ## Perl
 
-Perl was developed by Larry Wall in 1987 as a scripting language to make report processing easier. Nowadays it is used for Linux system administration, Web development  and network programming. Perl is actually a family of languages that include features from other languages including C, shell script, AWK and sed. Perl 5 became popular in late 1990s as a CGI scripting language, due to its regular expression and string parsing abilities.
+Perl was developed by Larry Wall in 1987 as a scripting language to make report processing easier. Nowadays it is used for Linux system administration, Web development and network programming. Perl is actually a family of languages that include features from other languages including C, shell script, AWK and sed. Perl 5 became popular in late 1990s as a CGI scripting language, due to its regular expression and string parsing abilities.
 
 ## Python
 
-Guido Van Rossum designed Python in 1991. The premise of Python was that is is easier to read for humans and it requires fewer lines of code in comparison to other programming languages. Nowadays Python is used for sites such as Instagram, Uber, Spotify or Dropbox. *Fun fact 2:* Python was named after the Monty Python, the British comedy group.
+Guido Van Rossum designed Python in 1991. The premise of Python was that is should be easier to read for humans and it requires fewer lines of code in comparison to other programming languages. Nowadays Python is used for sites such as Instagram, Uber, Spotify or Dropbox. *Fun fact 2:* Python was named after the Monty Python, the British comedy group.
 
 ## R
 
