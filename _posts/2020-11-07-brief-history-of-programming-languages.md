@@ -31,7 +31,7 @@ In 1954 Fortran (which stands for Formula Translation) was created by John Backu
 
 ## AGOL and COBOL
 
-Created in 1958 and 1959 respecively. Agol stands for Algorithmic Language and was created for scientific use. It is a predecessor of Pascal, C, C++, and Java. COBOL stands for COmmon Business Oriented Language and was created by  Dr. Grace Murray Hopper. It was designed for business and it is still used in ATMs, credit card processing, telephone systems, hospital and government computers, automotive systems, and traffic signals. *Fun fact*: Pieces of COBOL source code were used in Terminator's vision display in the movie "The Terminator".
+Created in 1958 and 1959 respectively. Agol stands for Algorithmic Language and was created for scientific use. It is a predecessor of Pascal, C, C++, and Java. COBOL stands for COmmon Business Oriented Language and was created by  Dr. Grace Murray Hopper. It was designed for business and it is still used in ATMs, credit card processing, telephone systems, hospital and government computers, automotive systems, and traffic signals. *Fun fact*: Pieces of COBOL source code were used in Terminator's vision display in the movie "The Terminator".
 
 Late 1960s to late 1970s flourished with programming languages, many of which are still used today.
 
