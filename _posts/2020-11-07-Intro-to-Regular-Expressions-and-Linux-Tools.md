@@ -4,7 +4,8 @@ title:  "Intro to Regular Expressions & Linux Tools: grep, sed, and awk"
 date:   2020-11-07 12:54:04 -0700
 categories: regular expressions grep sed awk
 ---
-Written by: Katelyn Spilman
+# Intro to Regular Expressions & Linux Tools: grep, sed, and awk
+###### By: Katelyn Spilman
 
 Hello! The purpose of this blog post is to provide beginning bioinformaticians with a high level introduction to the concept of regular expressions and how they can be used with the Linux command line tools `grep`, `awk`, and `sed` to search for (and even modify) text in files.
 
