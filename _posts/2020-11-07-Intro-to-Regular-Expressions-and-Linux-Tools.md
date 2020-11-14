@@ -62,7 +62,7 @@ The first argument is the pattern we're searching for and the second is the inpu
 
 There are also a number of different options that can be used to enable other capabilities of `grep`. For instance, you can find context about the matching line using the `-Bn` option, which prints *n* lines before the matching line, and the `-An` option, which prints *n* line after the matching line.
 
-## Examples
+### Examples
 As a simple example, let's say we want to search for some text within an example text file: `sample.txt`.
 
 To view the contents of the `sample.txt` file, we can use the `cat` command:
