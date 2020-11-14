@@ -79,7 +79,7 @@ catnap
 Green
 ```
 If we want to find all instances within `sample.txt`
-that exactly match the word "dog", we can use the following `grep` command:
+that exactly match the word "cat", we can use the following `grep` command:
 
 ``` bash
 $ grep "cat" sample.txt
