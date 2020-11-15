@@ -12,9 +12,13 @@ In the case of computer science, a shell is the tool a user can utilize in order
 **Command-line interface vs graphical user interface**
 So, we now know that shell is this command line interpreter which can really be broken down into two categories: command line interface or a graphical user interface. Command-line shells, require the user to be familiar with commands and their calling syntax and understanding the concepts about shell specific scripting languages.
 
+Here is an example of what a command-line interface may look like.
+
 ![command line interface]({{ site.url }}/assets/command_line_interface.png)
 
 A graphical user interface means that you can manipulate programs graphically. Graphical interfaces are characterized as being easy to use. You can do things such as open and close windows in a desktop environment. Some people often think of graphical interfaces as an electronic desktop because it is where data files are represented as if they were paper documents on a desk.
+
+Here is an example of what a graphical user interface may look like.
 
 ![graphical interface]({{ site.url }}/assets/graphical_interface.png)
 
