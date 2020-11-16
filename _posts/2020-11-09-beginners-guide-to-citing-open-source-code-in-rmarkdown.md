@@ -42,7 +42,7 @@ There are four kinds of BibTeX entries, each beginning with the @ character:
 
 * Actual **@ENTRIES** represent individual references. There are standards that Bib-TeX recognizes: @article, @book, @inproceedings etc.
 
-Each BibTeX entry will have a type, a key, and several **Tags** that contain the citation information for the entry.
+Each BibTeX entry will have a **type**, a **key**, and several **tags** that contain the citation information for the entry. The **key** is used to identify the name of the work you are citing, whereas **tags** represent different types of author information within the entry.
 Here's a BibTeX entry for the `dplyr` package from one of my projects on GitHub:
 
 `@Manual{dplyr,`\
@@ -69,8 +69,8 @@ That way the **author Tag** can look something like this:
 `author = {hw # rf # lh # km}`
 
 ## Calling Your References
-The **key** in the above example and all of your BibTeX entries is the signal to Rmarkdown to search your .bib file for the information to populate your reference in a paragraph.
-The format for that call is `[@tag]`.
+The **key** in the above example and all of your BibTeX entries is a shorthand name for your reference that acts as the signal to Rmarkdown to search your .bib file for the information to populate your reference in a paragraph.
+The format for that call is `[@key]`.
 You can place the citation call in a paragraph of text easily using square brackets:
 
 "This post was made possible by the information made available on bibtex.org [@bibtex]. Thanks guys!"
