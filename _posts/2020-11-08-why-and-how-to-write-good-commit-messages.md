@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "How to and Why Write Good Commit Messages"
+title:  "How to Write Good Commit Messages"
 date:   2020-11-08 12:54:04 -0700
-categories: commit messages overview
+categories: GitHub, commit messages
 ---
 ## The Purpose of Commit Messages
 
@@ -57,10 +57,9 @@ In this situation, you can simply look and see that an extra character was remov
 However when one 50 character line isn't enough to explain, you'll need to add a body. This would look something like:
 
 ```
-Add subject here and do not exceed 50 characters
+Add defensive programming checks into code
 
-Add body here separated with a blank line.
-Wrap text so body does not exceed 72 characters.
+This makes sure that any invisible issues do not occur and if so will stop the code and give an error message
 ```
 #### The easiest and fastest way to add and commit your work is to use command line arguments.
 
