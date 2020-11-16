@@ -27,12 +27,12 @@ A bibliography file is a plain-text document with the .bib extension that utiliz
 Defining the bibliography file in your Rmarkdown header and properly calling references in paragraphs instructs Rmarkdown to search for the .bib file. The BibTeX format lets Rmarkdown pull author information from your bibliography to populate your citations.
 Here's some useful information paraphrased from bibtex.org:
 
-There are four kinds of BibTeX entries:
+There are four kinds of BibTeX entries, each beginning with the @ character:
 * **@STRING** lets you define useful abbreviations to shorten your entries without re-typing long names and titles. This also helps maintain the 60 character limit:
 
   `@string { zjh = "Mr. Zachary John Houston" }`
 
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;which you can use in other BibTeX tags:
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;which you can use in other BibTeX tags. Use the # symbol to combine strings:
 
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;`author = zjh # " and Dr. Naupaka Zimmerman"`
 
