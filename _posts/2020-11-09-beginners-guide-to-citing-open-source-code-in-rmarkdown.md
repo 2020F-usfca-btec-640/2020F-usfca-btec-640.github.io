@@ -24,7 +24,7 @@ I was introduced to this technique by my bioinformatics professor at the Univers
 ## BibTeX
 BibTeX is a language that defines author information within a bibliography file when you write citations into your Rmarkdown file.
 A bibliography file is a plain-text document with the .bib extension that utilizes BibTeX format for reference entries.
-Defining the bibliography file in your Rmarkdown file and properly calling references within tells Rmarkdown to search for the .bib file and the BibTeX format lets it pull author information to populate your citations.
+Defining the bibliography file in your Rmarkdown header and properly calling references in paragraphs instructs Rmarkdown to search for the .bib file. The BibTeX format lets Rmarkdown pull author information from your bibliography to populate your citations.
 Here's some useful information paraphrased from bibtex.org:
 
 There are four kinds of BibTeX entries:
