@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  "Welcome to Atom!"
-date:   2020-11-07 12:54:04 -0700
+date:   2020-11-16 12:54:04 -0700
 categories: Atom markdown GitHub html
 ---
 Hello! This blog post will walk you through the basic steps on how to set up and
-use Atom. Atom is an awesome and free text editing tool that allows you to write
-Markdown and convert it into an html.
+use Atom. Atom is an awesome and free text editing tool that allows you to write in
+Markdown and convert it into an html file.
 # Setting up Atom
 First, let's start by installing Atom onto your computer:
  1. Visit the [Atom website](https://atom.io/)
@@ -18,8 +18,7 @@ First, let's start by installing Atom onto your computer:
  6. Now you are ready to start typing!
 
 ### Downloading Packages
-Our next step will be to download the necessary packages before we can get
-to learning how to write cool syntax.
+Our next step will be to download the necessary packages before we can get started on learning how to write cool syntax.
 
 You will only need to download three:
 * language-markdown
@@ -55,3 +54,9 @@ Our last step will be to convert your masterpiece into an HTML link.
 2. Right-click in any *blank* area of the preview
 3. Click Copy (or Save depending on what you desire) As HTML
 4. Paste the result wherever you need it
+
+# For more information...
+Please look into the following links for more assistance on how to download, set up, and explore Atom.
+1. [Installing Atom](https://www.youtube.com/watch?v=EyG20hhON6E)
+2. [Atom Settings & Preferences](https://www.youtube.com/watch?v=zYvMFtO71fk)
+3. [The Atom Interface with Tricks & Tips](https://www.youtube.com/watch?v=ZnzLPIhMJnw)
