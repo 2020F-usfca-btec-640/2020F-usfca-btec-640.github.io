@@ -2,14 +2,14 @@
 layout: post
 title:  "Pull most recent files in R"
 date:   2020-11-09
-categories: jekyll update
+categories: R base package
 ---
 # Pulling most recent files in R
  ###### by Joel Christian Andrade
 
 Many coding pipelines involve taking raw data files, formulating code and eventually working with a few, if not many, output files.
 
-Take for example the list of files, in my directory `/raw_data` below from the publicly available Apple mobility database tracking movement.
+Take these files in the directory `/raw_data` below, downloaded from publicly available Apple mobility database tracking movement.
 
 ```
 applemobilitytrends_2020-08-29.csv
@@ -21,7 +21,7 @@ applemobilitytrends_2020-10-02.csv
 applemobilitytrends_2020-11-08.csv
 ```
 
-While retroactive data analysis is useful, the most recent file will include the data of the previous files.  Thus, to retrieve the most up to date information while using R, we must use some functions which are pre-loaded into R.
+While retroactive data analysis is useful, the most recent file will include all data from previous files.  Thus, to retrieve the most up to date information while using R, we must use some functions which are pre-loaded into R.
 
 First, we must elucidate these functions
 * `file.info` = provides some basic information about a file(s)
