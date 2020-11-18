@@ -2,7 +2,7 @@
 layout: post
 title:  "Differences between Programming Languages"
 date:   2020-11-04 12:50:28
-categories: jekyll update
+categories: Programming Language Knowledge
 ---
 This page introduces all programming languages and compares the different programming languages in terms of the coding style, language principles, related applications, advantages and disadvantages, as well as how the language is executed. The purpose of making this page is to let you be familiar with all these programming languages and help you choose the one you mostly want to learn and use.
 
@@ -34,6 +34,13 @@ while counter < 5:
   print("The current counter value: " % counter)
   counter = counter + 1
 ```
+Explanation: Initially, we set the variable "counter" equals to 1. Whenever the value of "counter" is smaller than 5, print the current value, then add 1 to the current value. After addition, variable "counter" is now recheck the value whether it is smaller than 5, and then print the new value. When "counter" is greater than 5, it will stop running.  
+The output should be:
+> The current counter value 1  
+> The current counter value 2  
+> The current counter value 3  
+> The current counter value 4  
+
 Some common statements and controls: `if`,  `for`,  `while`, `raise`, `break`, `continue`, `return`, `print`, `import` ...
 
 ## 2. Java/JavaScript
@@ -80,6 +87,10 @@ else
 echo "It is not number 0"
 fi
 ```
+Explanation: we set the variable equals to 0. If n is equal to 0, then display "It is number 0"; otherwise it will display "It is not number 0".   
+Because we let n equal to 0. The output should be:  
+> It is number 0
+
 Run the file in the bash command line:
 ```
 $ bash if_example.sh
