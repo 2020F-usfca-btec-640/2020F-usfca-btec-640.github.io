@@ -5,6 +5,7 @@ date:   2020-11-09 12:54:04 -0700
 categories: GitHub Introduction Basics
 ---
 # Introduction to GithHub
+**by Sami Darrow**
 
 ![GitHub Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Font_Awesome_5_brands_github.svg/124px-Font_Awesome_5_brands_github.svg.png)
 
@@ -42,14 +43,23 @@ It is very important that you keep track of what you’ve done and what works wh
 GitHub allows for version control in several ways, some of which are detailed below. For continuity’s sake, I will be referencing the two-person project I detailed in the previous section:
   * **The ability to fork a repository:** Person 2 can go to person 1’s GitHub profile and find the repository that has their project in it. They can then fork this repository to their GitHub account.
     * This basically means that they copy the project to their GitHub account so they can use it as their own and not mess with what Person 1 is doing.
+    * Additionally, you have the ability to create new branches in a project. This acts as an effective form of version control as well. A new branch essentially a copy of the original code but it will not effect any of the code on the main branch.
+      * Some command when working with branches are as follows:
+        * Creating a new branch: `git checkout -b <name-of-new-branch>`
+        * Switching to an existing branch: `git checkout <name-of-existing-branch>`
+        * Preview all existing branches: `git branch`
 
 
   * **Pushing Code to GitHub:** if you are working on the command line this can be done through the command ‘git push’ followed by the name of the file that you would like to push to GitHub. This allows Person 2 to take whatever they were working on and put it onto GitHub for Person 1 to see.
     * This step is not inherently about version control, but it is an important step that needs to be taken to maintain project continuity.
 
+      *Note that when a new version gets added to GitHub, in order for the other person to get that new version they have to pull that info from GitHub. To do this the command `git pull` can be used.*
+
 
   * **Creating a pull request:** Person 2 can create a pull request that will notify Person 1 that they made some changes to the existing code. When looking at the work Person 2 submitted, Person 1 can decide whether it will be helpful or whether it will harm the existing code.
     * If they determine that it would harm the existing code, they would not merge it to the main repository. This is where version control is important because without it, the whole project could have been messed up.
+    * Typically, Person 2 would have created their own branch with their own work. If Person 1 deems the code to be helpful they can merge that branch with the main code.
+      * Once a branch is merged it can either be kept or deleted. If more changes are intended to be made to this branch it should **not** be deleted. If all the code is approved by Person 1 and no changes are intended to be made to the branch then the branch can be deleted
 
 Speaking outside of the scope of team projects, GitHub can be used as version control for personal projects as well. You can push commit and push things to git as you work on your code to ensure that you have a copy of your project somewhere other than your own machine. If you wanted to compare GitHub’s version control capacity to something it would be like writing a final essay for a class and having it both on your computer and also on your Google Drive account.
 
