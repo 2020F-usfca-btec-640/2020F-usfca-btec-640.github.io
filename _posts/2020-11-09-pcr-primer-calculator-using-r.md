@@ -7,12 +7,12 @@ categories: PCR primer melting temperature
 Hello and welcome to my blog post about creating your own PCR primer melting temperature calculator using R! You might be asking your self, what is a PCR Primer? Why do I need to know the melting temperature of my PCR primer? Perhaps, you are here simply because you were assigned to read this blog post to determine the quality of its content based on some kind of grading scale. Nevertheless, all your questions and more will be answered here! So, without further ado, lets get into it.
 
 ## What is a PCR Primer?
-To a Biologist a primer is a highly sophisticated tool that allows a scientist to conduct several laboratory experiments. This versatile tool is comprised of a single-stranded chain of nucleotides, typically ranging from 15 to 30 bases long. Scientists add additional bases to the single stranded molecule to customize it for their specific polymerase chain reaction (PCR) experiment. For example, a fluorescent molecule can be attached to a PCR primer for use in RT-PCR experiments. While the application of these primers are numerous, we will be focusing on primers designed for PCR cloning.
+A primer is a highly sophisticated tool that allows a scientist to conduct several laboratory experiments. This versatile tool is comprised of a single-stranded chain of nucleotides, typically ranging from 15 to 30 bases long. Scientists add additional bases to the single-stranded molecule to customize it for their specific polymerase chain reaction (PCR) experiment. For example, a fluorescent molecule can be attached to a PCR primer for use in RT-PCR experiments. While the application of these primers are numerous, we will be focusing on primers designed for PCR cloning.
 
-What is PCR cloning, you ask? For our purposes, the application of PCR cloning is out of scoop for this blog post. The important part here is to note that there will be additional sequences attached to the five prime side of a given PCR primer. This information is pertinent because the additional bases **WILL NOT** be include when calculating the melting temperature of our PCR primer. More on that once we begin coding.
+What is PCR cloning, you ask? For our purposes, the application of PCR cloning is out of scope for this blog post. The important part here is to note that there will be additional sequences attached to the five prime side of a given PCR primer. This information is pertinent because the additional bases **WILL NOT** be include when calculating the melting temperature of our PCR primer. More on that once we begin coding.
 
 ## The Game Plan
-Like all good scientists and coders, we must first plan out how we want to develop this calculator before we start coding in R. Spending quality time to plan out and design the code will save us time and effort in the future. When planning out a script or a simple block of code, I like to use *pseudocode*. Below you can see the our pseudocode. As we venture into each section of the code, I will give more explanation to each step of our pseudocode and explain what that will look like in R.
+Like all good scientists and coders, we must first plan out how we want to develop this calculator before we start coding in R. Spending quality time to plan out and design the code will save us time and effort in the future. When planning out a script or a simple block of code, I like to use *pseudocode*. Below you can see our pseudocode. As we venture into each section of the code, I will give more explanation to each step of our pseudocode and explain what that will look like in R.
 
 **Overview**  
 1. Adding libraries to the R script
@@ -45,7 +45,7 @@ Lets take a look at the expected input file for our script.
 For each row with sequencing information, we want to process and output the results of PCR primer.  
 ![output folder layout]({{ site.url }}/assets/pcr-primer-calculator-using-r-output-folder.jpg)
 
-Make a note about each column. reference the column inside the code. so that we can denote each code block and what field that code relates to.  
+Make a note about each column. Reference the column inside the code, so that we can denote each code block and what field that code relates to.  
 ![output file results]({{ site.url }}/assets/pcr-primer-calculator-using-r-output-file-results.jpg)
 
 Each output file will contain the entire PCR primer sequence (leading strand, restriction site and primer sequence), a count of each nucleotide of the *annealing* portion of the primer sequence, and the melting temperature of the primer sequence. Furthermore, we need to add in a minimum and maximum melting temperature section to the output file. I will explain why we need a minimum and maximum once we begin coding the nucleotide count code.
@@ -54,7 +54,7 @@ Each output file will contain the entire PCR primer sequence (leading strand, re
 ## Creating our script in R
 #### Section 1: Adding libraries to the R script  
 
-Libraries were created to make coding easier for everyone. A library inside code is synonymous to a literal library. They are full of *books*. Each book you request from the library helps you accomplish a task. Imagine yourself as a computer, your human overlord demands that you take the integral of an infinite series that is both continuous and decreasing in a positive manor and needs to know if the function converges or diverges. What are you going to do? You will go to the library and request a Calculus textbook by Ron Larson. Once you have the book, you can tell your master the area under the curve of the infinite series is finite and will converge.
+Libraries were created to make coding easier for everyone. A library inside code is synonymous to a literal library. They are full of *books*. Each book you request from the library helps you accomplish a task. Imagine yourself as a computer, your human overlord demands that you take the integral of an infinite series that is both continuous and decreasing in a positive manner and needs to know if the function converges or diverges. What are you going to do? You will go to the library and request a Calculus textbook by Ron Larson. Once you have the book, you can tell your master the area under the curve of the infinite series is finite and will converge.
 
 For our script we will be using two libraries, readr and stringr.
 ```r
@@ -71,7 +71,7 @@ library("stringr")
   - Defensive coding: check the file for primer data   
     - If no primers are found in csv file, abort the script  
 
-The readr library handles all the necessary coding for *streaming* in the input file into our script. now we can interacting with our primer data!
+The readr library handles all the necessary coding for *streaming* in the input file into our script. Now we can interacting with our primer data!
 ```r
 input_file <- "path/to/pcr_primer_input_file.csv"
 primer_information <- readr::read_csv(input_file)
@@ -79,7 +79,7 @@ primer_information <- readr::read_csv(input_file)
 # we will use this variable to access various parts of the data.
 ```
 
-First we need to add a defensive coding block into our script to prevent empty input files from being processed. If we do not check for empty input files, then we might come across coding issues later on in the script. How do we prevent this? Lets count the number of rows in primer_information that have sequencing data.
+First we need to add a defensive coding block into our script to prevent empty input files from being processed. If we do not check for empty input files, then we might come across coding issues later on in the script. How do we prevent this? Lets count the number of rows in primer_information that have sequencing data and stop the function if there is less than 1 row.
 ```r
 num_of_rows_in_data <- nrow(primer_information[, 1])
 # we will save this number to a variable becuase we will need it again within
@@ -91,7 +91,7 @@ if (num_of_rows_in_data <= 1) {
 }
 ```
 
-#### Section 3: Loop: Calculate the melting temperature of each primers
+#### Section 3: Use a loop to calculate the melting temperature of each primers
 **Overview**  
 3. **Loop: Calculate the melting temperature of each primer**
   - loop through each row of the csv file until we have processed all rows with sequence data
@@ -109,7 +109,7 @@ if (num_of_rows_in_data <= 1) {
   - create a data frame using the variables we created
 
 
-The bulk of our script will be wrapped around a For Loop. The code is written this way because we need to processes each line of sequences data at a time. Furthermore, we want to generate an output file for each sequences data we processed. The attributes of a For Loop fits perfectly for what we want to do.
+The bulk of our script will be wrapped around a For Loop. The code is written this way because we need to process each line of sequence data at a time. Furthermore, we want to generate an output file for each sequences data we processed. The attributes of a For Loop fits perfectly for what we want to do.
 
 Once we are in the loop, we want to remove any spaces within the primer name and replace them with "_". Additionally we can format the sequences how we would like and then piece together the entire PCR primer
 ```r
@@ -168,13 +168,11 @@ For the next block of code we will begin counting up each nucleotide within the 
   h_cnt <- stringr::str_count(annealing_seq, "H")
   b_cnt <- stringr::str_count(annealing_seq, "B")
   n_cnt <- stringr::str_count(annealing_seq, "N")
-
 ```
 
-Now that we have a count of each possible base for a given annealing primer sequence, we can calculating the melting temperature of each primer. Below is the equation for finding the melting temperature of a given sequence. As you can see, the melting point is decided by the amount of A-T bases and G-C bases. But how does ambiguous bases fit into the equation? This is a tricky question to answer because ambiguous bases can become another bases during PCR (refer to the *Ambiguous base chart* for each ambiguous base to see which nucleotide that base could become). We will need to calculate two melting temperatures; a minimum and maximum temperature for sequences with ambiguous bases. To calculate the minimum temperature, we will count the ambiguous bases that could potentially become an A or T base as an A or T nucleotide. The ambiguous bases that can **only** become a G or C will be counted as a G or C nucleotide. For calculating the maximum temperature, we will flip the ambiguous assumption, in which ambiguous bases that could potential become a G or C base will be counted as a G or C nucleotide. And ambiguous bases that can **only** become an A or T base will be counted as an A or T nucleotide. To make this concept easier to conceptualize, I have include the pseudocode before the code block.
+Now that we have a count of each possible base for a given annealing primer sequence, we can calculate the melting temperature of each primer. Below is the equation for finding the melting temperature of a given sequence. As you can see, the melting point is decided by the amount of A-T bases and G-C bases. But how do ambiguous bases fit into the equation? This is a tricky question to answer because ambiguous bases can become other bases during PCR (refer to the *Ambiguous base chart* for each ambiguous base to see which nucleotide that base could become). We will need to calculate two melting temperatures; a minimum and maximum temperature for sequences with ambiguous bases. To calculate the minimum temperature, we will count the ambiguous bases that could potentially become an A or T base as an A or T nucleotide. The ambiguous bases that can **only** become a G or C will be counted as a G or C nucleotide. For calculating the maximum temperature, we will flip the ambiguous assumption, in which ambiguous bases that could potential become a G or C base will be counted as a G or C nucleotide. And ambiguous bases that can **only** become an A or T base will be counted as an A or T nucleotide. To make this concept easier to conceptualize, I have include the pseudocode before the code block.
 
-> Melting Temp = 2 * (A + T) + 4 * (G + C)
-
+> Melting Temp = 2 * (A + T) + 4 * (G + C)  
 
 **Pseudocode for calculating melting temperature**  
 if there are no ambiguous bases in the sequence,
@@ -224,7 +222,7 @@ else (there are ambiguous bases in the sequence)
     melting_temp <- ""
   }
 ```
-Voila! We have created the code to calculate the melting temperature of our PCR primers! Before we wrap this project there are a couple more things we need to think about before finishing. We should include the G-C content percent in our code. The G-C percentage in a sequence is import for scientists to know. Like the melting temperature, G-C content can change the properties of the primer. Furthermore, we can add more data points that we think will be useful for scientists to know about there PCR primer, like the length of the annealing sequences.
+Voila! We have created the code to calculate the melting temperature of our PCR primers! Before we wrap this project there are a couple more things we need to think about before finishing. We should include the G-C content percent in our code. The G-C percentage in a sequence is import for scientists to know. Like the melting temperature, G-C content can change the properties of the primer. Furthermore, we can add more data points that we think will be useful for scientists to know about their PCR primer, like the length of the annealing sequences.
 
 ```r
   # save the length of the annealing sequences to a variable
@@ -240,7 +238,6 @@ Voila! We have created the code to calculate the melting temperature of our PCR 
   } else {
     print_num <- row_num
   }
-
 ```
 
 #### Section 4: Exporting our results to a new csv file
