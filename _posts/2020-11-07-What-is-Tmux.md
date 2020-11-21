@@ -19,15 +19,17 @@ Let's say a student and their team must complete a presentation in two days, but
 
 ## How To Create And Connect To Tmux
 
-1) Start a new session
-*Note: You can have as many tmux sessions running at a time! The work is saved and stays the same when you leave a particular session*
+### 1) Start a new session using the following command.
+You can name your tmux session anything you would like. This example tmux session has been named "introduction-tmux".
 
 ![Create tmux session screenshot]({{ site.url }}/assets/tmux-01.jpg)
+*Note: You can have many tmux sessions running at the same time! The work is saved and stays the same when you leave a particular session*
 
+The following pane with a green bar at the bottom will appear on the screen. This means that you are now working within the tmux session.
 ![tmux pane screenshot]({{ site.url }}/assets/tmux-02.jpg)
 *The green line at the bottom of the screen tells the user they are in a tmux session (includes name of file and what is running, in this case bash)*
 
-2) You can split the screen horizontally and vertically
+### 2) You can split the screen horizontally and vertically
 
 __Vertical Split__ (Control-b and %)
 ![tmux pane vertical split screenshot]({{ site.url }}/assets/tmux-03.jpg)
@@ -35,18 +37,20 @@ __Vertical Split__ (Control-b and %)
 __Horizontal Split__ (Control-b and ")
 ![tmux horizontal split screenshot]({{ site.url }}/assets/tmux-04.jpg)
 
-3) Example: You can run something, detach, and it will continue running until it is complete
+### 3) Example: You can run something, detach, and it will continue running until it is complete
 
 __Run Bash Script__
+This example is a simple script that will list the numbers 1 through 50 but will pause 4 seconds before listing the next number.
 ![tmux script screenshot]({{ site.url }}/assets/tmux-05.jpg)
 
+You can see that the numbers are being displayed in order.
 ![tmux screenshot]({{ site.url }}/assets/tmux-06.jpg)
-*Note: Even if you detach, this will continue to run*
+*Note: Even if you detach, this will continue to run until all 50 numbers have been displayed*
 
 __Detach__
 Use: Control-b and d; to exit the tmux session
 
-You will exit the session and see the message below
+You will exit the session and see the message below.
 ![tmux exit session screenshot]({{ site.url }}/assets/tmux-07.jpg)
 
 You can check what sessions are running with `tmux ls`
@@ -59,14 +63,13 @@ Use...
 As you can see below the session kept running and finished the loop
 ![tmux complete run screenshot]({{ site.url }}/assets/tmux-10.jpg)
 
-4) Use `exit` to leave the tmux session
+### 4) Use `exit` to leave the tmux session
 
 Once you exit, the session should no longer be listed
 ![No tmux sessions listed screenshot]({{ site.url }}/assets/tmux-11.jpg)
 
 *Note: The files in tmux are the same as the ones outside of tmux. tmux is just a middle man!*
 ![Middleman Internet Image](https://mk0industcomhmhlrip6.kinstacdn.com/wp-content/uploads/2015/02/middleman.jpg)
-
 
 ## Some Features
 
