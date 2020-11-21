@@ -15,7 +15,7 @@ What is PCR cloning, you ask? For our purposes, the application of PCR cloning i
 Like all good scientists and coders, we must first plan out how we want to develop this calculator before we start coding in R. Spending quality time to plan out and design the code will save us time and effort in the future. When planning out a script or a simple block of code, I like to use *pseudocode*. Below you can see our pseudocode. As we venture into each section of the code, I will give more explanation to each step of our pseudocode and explain what that will look like in R.
 
 **Overview**  
-1. Adding libraries to the R script
+1. Adding packages to the R script
 2. Import the PCR primer data  
   - Use readr to access the primer data from a csv files  
   - Defensive coding: check the file for primer data   
@@ -52,9 +52,9 @@ Each output file will contain the entire PCR primer sequence (leading strand, re
 
 -------------------------------------------------------------------------------
 ## Creating our script in R
-#### Section 1: Adding libraries to the R script  
+#### Section 1: Adding packages to the R script  
 
-Libraries were created to make coding easier for everyone. A library inside code is synonymous to a literal library. They are full of *books*. Each book you request from the library helps you accomplish a task. Imagine yourself as a computer, your human overlord demands that you take the integral of an infinite series that is both continuous and decreasing in a positive manner and needs to know if the function converges or diverges. What are you going to do? You will go to the library and request a Calculus textbook by Ron Larson. Once you have the book, you can tell your master the area under the curve of the infinite series is finite and will converge.
+Packages were created to make coding easier for everyone. To add a package to our code, we us the library function "library()"". Many coders, myself included, incorrectly refer to a package as a library. Packages are commonly mistaken as a library most likely because of their uncanny similarity to a literal library in real life. Conceptually a package is a set of *books* just like your neighborhood library! Each book you request from a package will help you accomplish a task. Similarly, renting a book from your local library can help you finish your book report or diorama of the solar system. Imagine yourself as a computer, your human overlord gives you a dozen of numbers and symbols then asks you to take the integral of an infinite series that is both continuous and decreasing in a positive manner. What are you going to do? You will go to the metaphorical library, request a Calculus textbook and crunch the numbers. Once you have the book, you can tell your master the area under the curve of the infinite series is finite and will converge.
 
 For our script we will be using two libraries, readr and stringr.
 ```r
@@ -71,7 +71,7 @@ library("stringr")
   - Defensive coding: check the file for primer data   
     - If no primers are found in csv file, abort the script  
 
-The readr library handles all the necessary coding for *streaming* in the input file into our script. Now we can interacting with our primer data!
+The readr library *reads* in the input file into our script. Now we can interacting with our primer data!
 ```r
 input_file <- "path/to/pcr_primer_input_file.csv"
 primer_information <- readr::read_csv(input_file)
@@ -79,7 +79,7 @@ primer_information <- readr::read_csv(input_file)
 # we will use this variable to access various parts of the data.
 ```
 
-First we need to add a defensive coding block into our script to prevent empty input files from being processed. If we do not check for empty input files, then we might come across coding issues later on in the script. How do we prevent this? Lets count the number of rows in primer_information that have sequencing data and stop the function if there is less than 1 row.
+First we need to add a defensive coding block into our script to prevent empty input files from being processed. If we do not check for empty input files, then we might come across coding issues later on in the script. How do we prevent this? Let's count the number of rows in primer_information that have sequencing data and stop the function if there is less than 1 row.
 ```r
 num_of_rows_in_data <- nrow(primer_information[, 1])
 # we will save this number to a variable becuase we will need it again within
@@ -111,7 +111,7 @@ if (num_of_rows_in_data <= 1) {
 
 The bulk of our script will be wrapped around a For Loop. The code is written this way because we need to process each line of sequence data at a time. Furthermore, we want to generate an output file for each sequences data we processed. The attributes of a For Loop fits perfectly for what we want to do.
 
-Once we are in the loop, we want to remove any spaces within the primer name and replace them with "_". Additionally we can format the sequences how we would like and then piece together the entire PCR primer
+Once we are in the loop, we want to remove any spaces within the primer name and replace them with "_". Additionally we can format the sequences how we would like and then piece together the entire PCR primer.
 ```r
 # the For Loop will start on row 1. Once the For Loop cycles back to the top
 # of the loop, data on row 2 will be used and so forth
