@@ -19,7 +19,7 @@ The Analytical Engine is one of the most successful achievements of Charles Babb
 Assembly language is any low level programming language which is specifically designed for a particular computer architecture. It simplifies the language of machine code and the instructions are needed to tell the computer what to do. On the contrary, high level programming languages are portable across multiple systems.
 Maurice Wilkes and his team at University of Cambridge constructed one of the first electronic digital stored-program computer - the The Electronic delay storage automatic calculator in 1949. The machine was capable of adding, subtracting, multiplying-and-adding, AND-and-adding, shifting left, arithmetic right shifting, printing characters and a few more but no division was possible. The instructions were held in a 18 bit format, the topmost bit could not be used due to timing issues, therefore only 17 bits were available.   
 
-![](https://upload.wikimedia.org/wikipedia/commons/2/22/EDSAC_%2819%29.jpg)Electronic delay storage automatic calculator (EDSAC)
+![Electronic delay storage automatic calculator (EDSAC)](https://upload.wikimedia.org/wikipedia/commons/2/22/EDSAC_%2819%29.jpg)Electronic delay storage automatic calculator (EDSAC)
 
 ## Autocode
 
