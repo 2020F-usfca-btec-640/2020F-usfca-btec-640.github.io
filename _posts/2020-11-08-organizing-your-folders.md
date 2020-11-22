@@ -13,20 +13,20 @@ There are couple of reasons to have a certain structure for your project:
 3. Improve the quality of the project with detailed explanations and notes as the work progresses.
 
 Basic directory layout may look like this:
-* data\
-  * raw\
-  * clean\
-* code\
-  * functions\
+* data/
+  * raw/
+  * clean/
+* code/
+  * functions/
     * 01_process-data.R
     * 02_create-figures-using-processed-data.R
-  * archived\
-* output\
-  * data-exploration-figures\
-  * final-figures\
-  * descriptive-title-for-output-file-batch\
+  * archived/
+* output/
+  * data-exploration-figures/
+  * final-figures/
+  * descriptive-title-for-output-file-batch/
 
-This is just a basic example and as you progress on your project your directories will evolve. Typically, files in the directory 'data\raw\' should not be changed or edited for reproducibility sake.
+This is just a basic example and as you progress on your project your directories will evolve. Typically, files in the directory 'data/raw/' should not be changed or edited for reproducibility sake.
 
 ## File Naming
 Once we have the basic structure down, let's talk about naming your files.
