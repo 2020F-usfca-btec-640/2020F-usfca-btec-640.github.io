@@ -13,7 +13,7 @@ It is used for styling different forms of writing like formatting README files, 
 Syntaxes are set of rules for grammar and spelling that defines the combination of symbols considered to be correctly structured in a particular programming language.
 
 ##### Headings
-Headings in Markdown are any line which is prefixed with the hashtag (#) symbol. The number of hashtags represents the heading level. A total of 6 levels can be made with 6 hashtags but in most writings, only 3 is commonly used. The syntax in block quotes are showing what the text looks like in Markdown.
+Headings in Markdown are any line which is prefixed with the hashtag (#) symbol. The number of hashtags represents the heading level. A total of 6 levels can be made with 6 hashtags but in most writings, only 3 is commonly used. Headings are useful in subdividing reports in the right order, organizing and making reports look aesthetically pleasing. The syntax in block quotes are showing what the text looks like in Markdown.
 
 ```
 # Heading 1
@@ -59,10 +59,10 @@ Lists are written with the following symbols (*, - or +) or numbers at the begin
 ```
 Ordered
 1. Item 1
-1. Item 2
-1. Item 3
+2. Item 2
+3. Item 3
    1. Item 3a
-   1. Item 3b
+   2. Item 3b
 
 Unordered
 * Item 1
@@ -72,10 +72,10 @@ Unordered
 ```
 Ordered
 1. Item 1
-1. Item 2
-1. Item 3
+2. Item 2
+3. Item 3
    1. Item 3a
-   1. Item 3b
+   2. Item 3b
 
 Unordered
 * Item 1
@@ -123,11 +123,11 @@ In as much as Markdown is a minimal Markup language that is read and edited with
 8. **Markdig**: A .NET library that follows the CommonMark specifications and includes a collection of extensions and the ability for the user to create their own.
 9. **MarkAPL**: A converter written in Dyalog APL language.
 10. **Showdown and Smartdown**: Markdown renderers in JavaScript.
-11. **hackmd.io**: An online Markdown editor that supports Markdown with extra features.
-12. **gomarkdown**: Markdown parser and HTML renderer in Go.
+11. **Hackmd.io**: An online Markdown editor that supports Markdown with extra features.
+12. **Gomarkdown**: Markdown parser and HTML renderer in Go.
 
 ## Reasons you should use Markdown.
-1. It is suitable for everything. From writing online blog posts, to creating README files for projects and more.
-2. It is platform independent because it is a plaintext file. Markdown can be created on any device running Operating System.
+1. It is suitable for everything. From writing online blog posts, to creating README files for projects and more. Markdown is an easy way to provide structure and style to any document with ease.
+2. It is platform independent because it is a plaintext file. Markdown can be created on any device running Operating System because it doesn't need a proprietary software like Microsoft word.
 3. It is portable. Files containing markdown can be viewed using virtually any application
 4. It is everywhere. Multiple websites and applications support the use of Markdown. Examples are GitHub, Reddit, R Studios etc
