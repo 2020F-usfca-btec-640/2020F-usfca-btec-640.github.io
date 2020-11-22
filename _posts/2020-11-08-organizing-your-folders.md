@@ -49,9 +49,8 @@ Some other things to consider when naming files according to [Stanford's Data Ma
 
 ## Version Control
 As project gets more complicated and you start collaborating with other professionals, version control is something to consider. There is a software that helps you keep track of changes done by you or fellow collaborators. To learn more about that, please check out the following blog posts:
-* [Introduction to GitHub]({ site.url }) by Sami
-* [Basics of Git and Github]({ site.url }) by Sarah
-* [How to/why write good commit messages]({ site.url }) by Jordan
+* [Intro to Git and Github]({% link _posts/2020-11-06-intro-to-git-github.md %}) by Sarah
+* [How to/why write good commit messages]({% link _posts/2020-11-08-why-and-how-to-write-good-commit-messages.md %}) by Jordan
 
 Note: links will be added later to those sections on the blog.
 
