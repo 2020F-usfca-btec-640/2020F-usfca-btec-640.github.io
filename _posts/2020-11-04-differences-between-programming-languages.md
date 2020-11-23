@@ -108,7 +108,7 @@ HTML is assisted by CSS (Cascading Style Sheets) and JavaScript. If you want to 
 ### HTML History
 HTML was developed my a physicist Tim Berners-Lee. His purpose of developing this system was to share documents. In the late 1980, he wrote the browser and server software. The first version was published in November 1995 in order to upload file and client-side image. In the latest version HTML 5, it was published as a W3C Recommendation. [^7]
 
-![Tim Berners](https://www.thinkingheads.com/wp-content/uploads/2017/08/tim-berners-lee-conferenciante-1.jpg)
+![Tim Berners](https://www.csail.mit.edu/sites/default/files/styles/headshot/public/images/migration/berners-lee.jpg?h=5636fc5d&itok=osNQ4Qn3)
 
 # Example of HTML
 ```
