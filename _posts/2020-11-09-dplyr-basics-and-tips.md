@@ -43,7 +43,9 @@ Another way to think of the pipe is saying the word then in between the function
   * This function will subset a data frame and retain all rows satisfying the condition
   * It takes a data frame and expressions that return a logical value
 
-Here is some sample code using these functions.
+#### Here is some sample code using these functions:
+
+The following code chunks utilize an Apple COVID-19 mobility dataset. This dataset contains relative travel rates as a percentage or pre-pandemic travel. It is categorized by the location, date and type of transportation.
 
 ```r
 count_cities_counties_by_type <- state_data %>%
@@ -55,12 +57,16 @@ This code chunk would take the `state_data` data frame THEN select out the colum
 
 ```r
 state_data <- all_covid_data %>%
-    dplyr::filter(`sub-region` == state_to_analyze)
+    dplyr::filter(sub_region == state_to_analyze)
 ```
-This code chunk would take the `all_covid_data` THEN filter out the rows where the `sub-region` column is equal to the variable `state_to_analyze`. Then store those filtered results in the varaible `state_data`.
+This code chunk would take the `all_covid_data` THEN filter out the rows where the `sub_region` column is equal to the variable `state_to_analyze`. Then store those filtered results in the varaible `state_data`.
 
-See the cheat sheet here for more tips and a graphical representation of some functions:
-![dplyr cheat sheet]({% raw %}{{ site.url }}{% endraw %}/assets/data-transformation.pdf)
+#### See the attached [dplyr cheat sheet](https://github.com/rstudio/cheatsheets/blob/master/data-transformation.pdf) for more tips and a graphical representation of some functions.
+
+
+I hope you found this information helpful and happy coding!
+
+-KP 11/23/20
 
 #### References
 1. https://dplyr.tidyverse.org/index.html
