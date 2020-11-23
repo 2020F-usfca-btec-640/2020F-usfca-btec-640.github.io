@@ -108,7 +108,7 @@ HTML is assisted by CSS (Cascading Style Sheets) and JavaScript. If you want to 
 ### HTML History
 HTML was developed my a physicist Tim Berners-Lee. His purpose of developing this system was to share documents. In the late 1980, he wrote the browser and server software. The first version was published in November 1995 in order to upload file and client-side image. In the latest version HTML 5, it was published as a W3C Recommendation. [^7]
 
-![Tim Berners](http://archive.thegovlab.org/wp-content/uploads/2014/01/Sir-Tim-Berners-Lee.png)
+![Tim Berners](https://www.thinkingheads.com/wp-content/uploads/2017/08/tim-berners-lee-conferenciante-1.jpg)
 
 # Example of HTML
 ```
@@ -156,7 +156,7 @@ SQL is used by many companies which they need to gather data, such as UnitedHeal
 | C++ | quick processing, widely-used in software | operating systems, video games, application and software development | Google, Firefox, Blackberry OS | ⭐️⭐️ |
 | SQL | free and easily accessible, simple syntax | data processing, database management | nearly all applications | ⭐️⭐️⭐️ |
 
-
+# Bibliography
 [^1]: Wikipedia - Python
 [^2]: Wikipedia - Java
 [^3]: What is the difference between Java and JavaScript. https://www.educative.io/edpresso/what-is-the-difference-between-java-and-javascript
