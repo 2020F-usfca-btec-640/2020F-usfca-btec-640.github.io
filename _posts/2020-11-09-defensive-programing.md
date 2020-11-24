@@ -2,7 +2,7 @@
 layout: post
 title:  "Defensive programming - what it is and why it is important"
 date:   2020-11-09 12:54:04 -0700
-categories: defensive programming
+categories: defensive programming, assertions, pre-conditions, nulls
 ---
 # **Defensive programming - what it is and why it is important**
 Gabrielly Lunkes  
@@ -25,7 +25,7 @@ In this case, the code is checking if the input file actually has data in it. If
 
 * **Assertions**
 
-Assertions are statements that check if a condition is true or false. If it is, the program does nothing. If the condition is false, the program will print an error message.
+Assertions are statements that check if a condition is true or false. If the condition is true, the program does nothing and the code keeps running. If the condition is false, the program will stop running the code and print an error message.
 
 Example:
 ```r
@@ -36,7 +36,7 @@ for n in numbers:
     total += n
 print 'total is:', total
 ```
-In this piece of code, the for loop will work only with positive numbers. When it encounters a negative number, it will stop the loop and print the error message `Data should only contain positive values`.
+In this piece of code, the `assert n >= 0.0` statement results in an error if `n` is not greater than or equal to 0.0. In other words, the for loop will only work with positive numbers. When it encounters a negative number, it will stop the loop and print the error message `Data should only contain positive values`.
 
 * **Pre-conditions**
 
@@ -84,11 +84,11 @@ public class Controller
     }
 }
 ```
-In this case, the code is checking for `null` values.
+In this case, the code is checking for `null` values in the `logger`, `gateway`, and `user` variables. If a `null` argument is passed into this function, it would be considered a fatal error and stop the run. You could also add an error message after each `null` check to help the user understand which check went wrong.
 
 ## Why is defensive programming important?
 
-Defensive programming is a good practice that allows the user to react to unexpected errors and fix them faster. Let’s say that you create a code that processes extensive tabular data, but you do not use defensive programming. The code works perfectly with one dataset, great! However, when you try to use the same code to process a similar tabular dataset.  
+Defensive programming is a good practice that allows the user to react to unexpected errors and fix them faster. Let’s say that you create a code that processes extensive tabular data, but you do not use defensive programming. The code works perfectly with one dataset, great! However, when you try to use the same code to process a similar tabular dataset, it just doesn't work.  
 In this case, you first have to find where in the code did the error happen, and then you have to figure out why it happened. Perhaps the argument that a function is looking for does not exist in the new input file, or it exists but it is not in the correct format; any of these errors can take you two minutes to fix, but hours to find.  
 Troubleshooting can take a lot of time, and it is probably part of every programmer’s worst nightmares. Now, by using defensive programming style, the guard statements and assertions can guide you in the direction of the problem, or even tell you exactly what the problem was, saving time and protecting your mental health.  
 
