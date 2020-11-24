@@ -31,7 +31,7 @@ Load the package with:
 
 `wide_data <- readr::read_csv("data/raw_data/filename.csv")`
 
-3. Next, covert the dataset from wide form into long form with the pivot_longer() function from thetidyr package. Again, it is good practice to assign the file once it is changes. This should look like this:
+3. Next, covert the dataset from wide form into long form with the `pivot_longer()` function from the tidyr package. Again, it is good practice to assign the file once it is changes. This should look like this:
 
 `long_data <- wide_data %>%
 pivot_longer(cols = starts_with("7")),
