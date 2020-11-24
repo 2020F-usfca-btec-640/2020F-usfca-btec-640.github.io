@@ -47,6 +47,6 @@ file_name <-(paste0("output/..../", base name_no_ext, "_long.csv")
 readr::write_csv(long_data, path = file_name)
 return(long_data)`
 
-If you plan on converting more datasets from wide format to long in the future, you can also create one whole function that includes all the functions (`readr::read_csv()`, `pivot_longer()`, `readr::write_csv()`, etc.) mentioned above. For good practice, I also recommend testing out the function at the very end of your R script to see if the output file is properly created.
+If you plan on converting more datasets from wide format to long in the future, you can also create one whole function that includes all the functions (`readr::read_csv()`, `tidyr::pivot_longer()`, `readr::write_csv()`, etc.) mentioned above. For good practice, I also recommend testing out the function at the very end of your R script to see if the output file is properly created.
 
 For more information on how to create a function and use them, make sure to check out Jaclyn's blog post in this repository.
