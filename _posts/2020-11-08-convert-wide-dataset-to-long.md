@@ -20,7 +20,7 @@ In this case, for better analysis, you might want to condense the dataset by mov
 
 ## Steps Taken:
 
-1. First, download the necessary packages in your R Studio. This consists of readr.
+1. First, download the necessary packages in your R Studio. This consists of readr and tidyverse.
 `install.packages("readr")`
 `install.packages("tidyverse")`              
 Load the package with:
