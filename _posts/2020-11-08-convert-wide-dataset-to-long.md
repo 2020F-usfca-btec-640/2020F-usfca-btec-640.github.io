@@ -8,7 +8,6 @@ categories: wide dataset long pivot_longer tidy
 
 Completed by Kathy Anh Lam              
 November 8, 2020                      
-kplam4@usfca.edu
 
 At times, we may encounter datasets that have numerous data columns with the same set of data values. For example, in the file `applemobilitytrends-2020-09-26.csv` taken from https://covid19.apple.com/mobility, there are many data columns for each date, as shown in the image below.
 
