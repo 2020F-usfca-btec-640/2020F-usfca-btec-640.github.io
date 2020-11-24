@@ -40,7 +40,7 @@ values_to = "rel_mobility")`
 
 The `cols= starts_with("7")` is an example of the starting column number that you would like to being to condense by pivoting. In this example, column 7 of my dataset is where the first date column starts. The `names_to = "date"` is assigning the the column label. In this example, I would like to condense all my columns after column 7 into a single column labeled "date". The `values_to = 'rel_mobility'` is assigning the new values that are being condensed. In this specific example, the dataset I used was analyzing at relative mobility during each date.
 
-4. Finally, save the longer formatted file into a csv file in your designated output folder that is named based on the input but as "_longer" added on before .csv suffix. This can be done with:
+4. Finally, save the longer formatted file into a csv file in your designated output folder that is named based on the input but has "_longer" added on before .csv suffix. This can be done with:
 
 `basename_no_ext <- tools::file_path_sans_ext(basename(wide_data))
 file_name <-(paste0("output/..../", base name_no_ext, "_long.csv")
