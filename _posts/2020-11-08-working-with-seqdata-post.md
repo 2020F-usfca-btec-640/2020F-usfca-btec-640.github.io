@@ -12,8 +12,8 @@ categories: 1. ***Overview of FASTA/FastQ***, ***Basic of counting FASTA/FASTQ e
 ### *FASTA*
 - This format is used to store any kind of sequence data which  does not require the per-base pair quality score  
 - FASTA sequence entries have two parts: ***a description and the sequence data, which is denoted by the greater than symbol***. ***The next part contains the sequence which begins on the next line after the description***
-### FASTA Ex
-> ENSMUG00000020122 | ENSMUST00000138518  
+### FASTA Example
+ENSMUG00000020122 | ENSMUST00000138518  
 CCCTCCTACGTCAATAGCTAATCGCGCTAATCGCGATCGAAACTCGCAATCGCGCTA ATCTGCTCGATCGGCTAGCTAGCCCGGGAATCGCTAGCTGACTAGCGATCGACTCG   
 
 ### *FASTQ*  
@@ -22,7 +22,7 @@ CCCTCCTACGTCAATAGCTAATCGCGCTAATCGCGATCGAAACTCGCAATCGCGCTA ATCTGCTCGATCGGCTAGCTAG
 - ***The FASTQ format starts of with the description line beginning with @***
 - ***Then the line after contains the sequence on many lines***
 - ***The last line after the sequence contains information on the quality of the data. Each numeric base quality data is encoded utilizing the ASCII character scheme, which I will cover later***
-### FASTQ Ex
+### FASTQ Example
 > @DJB775P1:248:DOMDGACXX:7:1202:12362:49613
 TGCTTACGTCGGTTCGATTTCCGGGAAATTCCCGTGTCCCTAACGCTTAAGCTAAATC  +  
 JJJJJIIJJJJHIHHHGHFFFFFFCEEEEEDBD?DDDDDDDDBDDDABDCAFFFDDCH
@@ -37,8 +37,10 @@ Common command-line bioinformatics
 817420 untreated1_chr4
 - The wc -l command counts the total number of lines in the file
 
-`$ bioawk -cfastx 'END{print NR}' untreated1_chr4`  
+`$ bioawk -c fastx 'END{print NR}' untreated1_chr4`  
 204355  
+-  Bioawk is an extension of awk. Awk is a language that is able to conduct text processing and aids with data extraction. It can be adapted to extract and report specific parts of your data. Bioawk is one iteration of awk  
+- In this function, utilizing -c fastx will help let bioawk know to parse input as FASTQ or FASTA 
 - In the file untreated1_chr4 there are four lines per sequence. Using bioawk is a robust way to parse and printout the actual number of sequences in the file.
 
 ### *Intro to Inspecting & Trimming Low-Quality Bases*
@@ -82,3 +84,5 @@ Using the FASTQ file untreated1_chr4 as an example
 `import sys`  
 `from collections import Counter`  
 `from readfq import readfq`  
+
+---
