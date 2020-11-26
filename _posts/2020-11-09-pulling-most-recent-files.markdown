@@ -4,7 +4,7 @@ title:  "Pull most recent files in R"
 date:   2020-11-09
 categories: R base package
 ---
-# Pulling most recent files in R
+## Pulling most recent files in R
  ###### by Joel Christian Andrade
 
 Many coding pipelines involve taking raw data files, formulating code and eventually working with a few, if not many, output files.
@@ -20,6 +20,8 @@ applemobilitytrends_2020-09-30.csv
 applemobilitytrends_2020-10-02.csv
 applemobilitytrends_2020-11-08.csv
 ```
+
+### R functions involved
 
 While retroactive data analysis is useful, the most recent file will include all data from previous files.  Thus, to retrieve the most up to date information while using R, we must use some functions which are pre-loaded into R.
 
@@ -53,8 +55,10 @@ data/raw_data    0   TRUE   777 2020-10-4 13:03:40  2020-09-19 17:14:40  2020-10
 > list.files("/raw_data")
 [1] "applemobilitytrends_2020-09-12.csv" "applemobilitytrends_2020-09-18.csv" "applemobilitytrends_2020-09-25.csv"
 [4] "applemobilitytrends_2020-09-30.csv" "applemobilitytrends_2020-10-02.csv" "applemobilitytrends_2020-08-29.csv"
+[7] "applemobilitytrends_2020-11-08.csv"
 ```
 
+### Putting it all together
 
 Now, we want to combine those functions to display a specific editing time `(atime, atime, ctime)`
 
