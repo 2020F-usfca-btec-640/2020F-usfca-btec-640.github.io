@@ -2,7 +2,7 @@
 layout: post
 title:  "Introduction to Data Science!"
 date:   2020-11-09 13:30:00 -0700
-categories: Data Science
+categories: Data Science, Raw Data, Data
 ---
 # **Introduction to Data Science, What is it and Why now.**
 
@@ -24,11 +24,11 @@ Data is collected **everywhere**, and can be used with different purposes such a
 
 ## Why is Data Science so popular today?
 
-Everyday, around the world, data is being collected more than has ever been. Every transaction that a single person does is connected trough their email address, to their social media, what they like and dislike, where they have visited or are looking to visit, and what they can afford or not. All this information is valuable for companies and governments.
+Everyday, around the world, data is being collected more than ever. Every transaction a person makes is connected through their email address to their social media. Also, their preferences, past or upcoming vacation destinations, and what they can afford or not are equally recorded. All these pieces of information are available and valuable to companies and governments.
 
 #### What happens after all this data is collected?
 
-After the raw data is collected and put together, is important to do an analysis to extract valuable information from it. The raw data is important, yes, but the multiple analysis and conclusions that can be drawn from there are far more interesting than just having all the data without processing.  
+After the raw data is collected and put together, it is important to do an analysis to extract valuable information from it. The raw data is important, yes, but the multiple analysis and conclusions that can be drawn from there are far more interesting than just having all the data without processing.  
 
 The process of the workflow for data science is:  
 
