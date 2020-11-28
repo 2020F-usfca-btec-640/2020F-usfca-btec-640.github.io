@@ -40,7 +40,7 @@ Common command-line bioinformatics
 `$ bioawk -c fastx 'END{print NR}' untreated1_chr4`  
 204355  
 -  Bioawk is an extension of awk. Awk is a language that is able to conduct text processing and aids with data extraction. It can be adapted to extract and report specific parts of your data. Bioawk is one iteration of awk  
-- In this function, utilizing -c fastx will help let bioawk know to parse input as FASTQ or FASTA 
+- In this function, utilizing -c fastx will help let bioawk know to parse input as FASTQ or FASTA
 - In the file untreated1_chr4 there are four lines per sequence. Using bioawk is a robust way to parse and printout the actual number of sequences in the file.
 
 ### *Intro to Inspecting & Trimming Low-Quality Bases*
@@ -56,7 +56,7 @@ Common command-line bioinformatics
 **Two programs that will trim low-quality bases**
 - sickle (http://github.com/najoshi/sickle)
 - seqtk (http://github.com/lh3/seqtk)
-_ sickle & seqtk can be easily installable on Mac OS X with Homebrew  
+- sickle & seqtk can be easily installable on Mac OS X with Homebrew  
 Using the FASTQ file untreated1_chr4 as an example  
 
   `$ sickle se -f untreated1_chr4 -t sanger -o untreated1_chr4`  
@@ -77,6 +77,15 @@ Using the FASTQ file untreated1_chr4 as an example
 - Python has an implementation of it called *readfq.py* **(http://github.com/lh3/readfq)**  
 - The parsing routine for readfq is **readfq import readfq**  
 - Overall how readfq() works is it takes the file, and generates the FASTQ/FASTA entries. Then using readfq() it returns each FASTA/FASTQ entry containing the description of the sequence and quality of the sequence.  
+
+***Parsing in R***  
+- In R you can use the function `read.fasta(seqnir)`  
+- Here you utilize the package seqinr
+Example - `read.fasta(file = system.file("sequences/ct.fasta.gz" , package = "seqinr"))`
+- After this line you can set parameters to obtain the data you want  
+- To read FastQ files its **readFastq**, which comes from the *ShortRead* package  
+- `readFastq(dirPath, pattern=character(0), ...)  "readFastq (dirPath, pattern=character(0), ..., seq file)"`  
+- readFastq returns a single R object (ShortReadQ) containing sequences and qualities contained in all files in dirPath matching pattern.
 
 ***Ex of beginning of code using readfq()***  
 `#!/usr/bin/env Python`  
