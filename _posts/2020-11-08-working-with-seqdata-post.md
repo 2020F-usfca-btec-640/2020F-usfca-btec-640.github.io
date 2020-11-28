@@ -7,7 +7,16 @@ categories: 1. ***Overview of FASTA/FastQ***, ***Basic of counting FASTA/FASTQ e
 ---
 ![seq_image](https://i.ytimg.com/vi/fCd6B5HRaZ8/maxresdefault.jpg)
 
-## **FASTA & FASTQ**
+## **FASTA & FASTQ**  
+*Overview of FASTA*  
+- It is a text based format for representing either nucleotide sequences or peptide sequences where the base pairs or the amino acids are represented by using single-letter codes  
+- Each sequence in the FASTA file represents the sequence for a chromosome
+- The simplicity of the FASTA file format makes it easy to manipulate and parse the sequences to through programming languages such as R and Python  
+
+*Overview of FASTQ*  
+- A FASTQ file is a text file that contains the sequence data  
+- It is a widely used format in sequence analysis which is generated directly from the sequence like Illumina, and it contains more information than FASTA  
+- Each Illumina FastQ file format contains 4 pieces of information: The Sequence Identifier, Nucleotide sequence, Quality score Identifier line (a single "+" sign), and quality scores
 
 ### *FASTA*
 - This format is used to store any kind of sequence data which  does not require the per-base pair quality score  
@@ -23,7 +32,7 @@ CCCTCCTACGTCAATAGCTAATCGCGCTAATCGCGATCGAAACTCGCAATCGCGCTA ATCTGCTCGATCGGCTAGCTAG
 - ***Then the line after contains the sequence on many lines***
 - ***The last line after the sequence contains information on the quality of the data. Each numeric base quality data is encoded utilizing the ASCII character scheme, which I will cover later***
 ### FASTQ Example
-> @DJB775P1:248:DOMDGACXX:7:1202:12362:49613
+@DJB775P1:248:DOMDGACXX:7:1202:12362:49613
 TGCTTACGTCGGTTCGATTTCCGGGAAATTCCCGTGTCCCTAACGCTTAAGCTAAATC  +  
 JJJJJIIJJJJHIHHHGHFFFFFFCEEEEEDBD?DDDDDDDDBDDDABDCAFFFDDCH
 
