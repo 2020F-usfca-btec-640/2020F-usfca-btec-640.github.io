@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Converting Wide Dataset to Long Format" 
+title:  "Converting Wide Dataset to Long Format"
 date:   2020-11-08 04:39:04 -0700
 categories: wide dataset long pivot_longer tidy
 ---
