@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Converting Wide Dataset to Long Format" -- Kathy Anh Lam
+title:  "Converting Wide Dataset to Long Format" 
 date:   2020-11-08 04:39:04 -0700
 categories: wide dataset long pivot_longer tidy
 ---
