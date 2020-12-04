@@ -78,17 +78,48 @@ Interpreting the script above based on inputs and commands:
   * We have to read in the data file, the easiest way to do this is from a csv or txt file and prior to creating the figure set a variable equal to this file. This way you can call the variable and that will read in the data as opposed to giving the precise location of the data each time.
 3. `aes`
   * This is where you specify how data is being plotted. Which data is going on the x, which data is going on the y. You can also opt to select for color, size, and and data point shape or transparency (depending what type of plot you choose these options differ slightly).
-4. `geom_col`
+    * Within `aes` you a can also add a fill. You can use this when you are comparing two independent variable that have been grouped:
+      * `ggplot(aes(x = city, y = count, fill = type))`
+    * Alternatively, you can also choose to identify different groups by using multiple colors based on the group ID:
+      * ``
+4. `geom_col`(aes(color = flower_type))
   * In this example we are determining the type of figure to make, `geom_col` creates a column bar plot with the independent variable on the x-axis.
       * Substitute `geom_point` for a scatter plot
-      * Substitute `geom_violin` for a violin plot
+      * Example:
+      `ggplot(aes(x = independent_variable, y)) +
+      geom_point() +
+      labs(title = "Title",
+      x = "Independent Variable")`
+      * Substitute `geom_histogram` for a histogram:
+        * Example: (*note theres is only an x input*)
+        `ggplot(aes(x = independent_variable,
+        y = dependent_variable)) +
+        geom_histogram() +
+        labs(title = "Title",
+        x = "Independent Variable")`
       * Substitute `geom_boxplot` for a box plot
+        * Example:  
+        `geom_boxplot(aes(color = transportation_type)) +
+        labs(title = "Title",
+        x = "Independent Variable",
+        y = "Dependent Variable")`
       * Substitute `geom_line` for a line graph
+        * Example:  
+        `ggplot(aes(x = independent_variable,
+        y = dependent_variable)) +
+        geom_line() +
+        labs(title = "Title",
+        x = "Independent Variable",
+        y = "Dependent Variable")`
 5. `position =`
-  * In this sample script, `position_dodge` was used to group the bar plot by category. Depending on your ultimate figure goal, this may not be necessary for all bar plots.
+  * In this sample script, `position_dodge` was used to group the bar plot by category. Depending on your ultimate figure goal, this may not be necessary for all bar plots. Occasionally a stacked position, the default, is better when using a grouped dataset.
 6. `labs`
   * Axis labels, can be set `title`, `x=`, and `y=`
 7. In `ggplot` to continue adding input, each section has to be connection with a '+'.
+  * Other input options could be the following:
+    * `scale_fill_gradient(low = color1", high = "color2")`: color 1 and color 2 are up to you to choose with in a ggplot color scheme. This function can be used when you selected a 'fill' option for grouped variables.
+    * `theme_few()` will remove the gray background from plots as well as the grid
+    * `theme(axis.text.x = element_text(angle = 0-180))` will rotate the text on the x axis between 0 and 180 degrees. The same can be done for values on the y axis.
 
 ## Customizing
 Beyond the type of figure you are creating, there are additional commands to create more detailed figures. Additionally, there are customizations such as color scheme, background color, font size etc.
