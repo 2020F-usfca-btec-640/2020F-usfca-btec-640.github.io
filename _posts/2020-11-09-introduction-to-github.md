@@ -50,7 +50,7 @@ GitHub allows for version control in several ways, some of which are detailed be
         * Preview all existing branches: `git branch`
 
 
-  * **Pushing Code to GitHub:** if you are working on the command line this can be done through the command ‘git push’ followed by the name of the file that you would like to push to GitHub. This allows Person 2 to take whatever they were working on and put it onto GitHub for Person 1 to see.
+  * **Pushing Code to GitHub:** if you are working on the command line this can be done through the command `git push` followed by the name of the remote (usually this is `origin`) and then the name of the branch on the remote to push to (usually this is `master` or `main`). This allows Person 2 to take whatever they were working on and put it onto GitHub for Person 1 to see.
     * This step is not inherently about version control, but it is an important step that needs to be taken to maintain project continuity.
 
       *Note that when a new version gets added to GitHub, in order for the other person to get that new version they have to pull that info from GitHub. To do this the command `git pull` can be used.*
