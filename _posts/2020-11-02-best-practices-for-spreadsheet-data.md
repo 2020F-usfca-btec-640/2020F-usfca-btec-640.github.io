@@ -2,7 +2,7 @@
 layout: post
 title:  "Best Practices for Spreadsheet Data!"
 date:   2020-11-02 12:54:04 -0700
-categories: spreadsheet, notes, column, dates, CSV
+categories: spreadsheet notes column dates CSV
 ---
 Written by: Naailah Trejo
 
