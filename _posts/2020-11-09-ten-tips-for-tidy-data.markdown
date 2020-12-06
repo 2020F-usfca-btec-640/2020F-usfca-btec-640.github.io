@@ -7,7 +7,7 @@ categories: tidy data
 
 # Why use tidy data?
 
-So, you’re beginning to explore the wonderful world of bioinformatics! There is an incredible amount of computations and analytics you can accomplish with even just basic bioinformatics tools. However, all of these tools rely on a reliable organization of tabular data spreadsheets in order to do what they’re intended to do and avoid major errors. This is what is known as Tidy Data! Ensuring the use of tidy data not only prevents errors in data analysis, it also facilitates effective communication among collaborators. Below, I’ve laid out ten basic principles of tidy data. By using these principles, you’re setting up a strong foundation to make solid, clear, and reproducible analyses in the future.
+So, you’re beginning to explore the wonderful world of bioinformatics! There is an incredible amount of computations and analytics you can accomplish with even just basic bioinformatics tools. However, all of these tools rely on a reliable organization of tabular data (spreadsheets) in order to do what they’re intended to do and avoid major errors. This is what is known as Tidy Data! Ensuring the use of tidy data not only prevents errors in data analysis, it also facilitates effective communication among collaborators. Below, I’ve laid out ten basic principles of tidy data. By using these principles, you’re setting up a strong foundation to make solid, clear, and reproducible analyses in the future.
 
 # 10 Tips for tidy data
 ## 1.	Organization
