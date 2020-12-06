@@ -43,14 +43,17 @@ my_number = {"1", "2", "3", "4", "5"}
 ```
 Before doing anything else make sure your function is called into your global environment.
 
-To start out the for loop type for (). This will start out the for loop. In the parentheses place the name of the variables that you want to start in the loop and when you want to finish. In this case we want the the values from 1 through 5. Each of these variables will be represented by "my_number" whenever the for loop re-runs itself.
+To start out the for loop type `for ()`. This will start out the for loop. In the parentheses place the name of the variables that you want to start in the loop and when you want to finish. In this case we want the values from 1 through 5. Each of these variables will be represented by "my_number" whenever the for loop re-runs itself.
 
-Within the brackets is where to put the names of the specific functions you want to run. In this case the function from before "square_this"is being called along with another function "add_two_to_this". It's anyone's guess what exactly this function does. To make life on yourself easier put a print statement at the end so it can show you the output of your operation and determine if adjustments need to be made.
+Within the curly braces is where to put the names of the specific functions you want to run. In this case the function from before "square_this"is being called along with another function "add_two_to_this". It's anyone's guess what exactly this function does. To make life on yourself easier put a print statement at the end so it can show you the output of your operation and determine if adjustments need to be made.
 
-To test the for loop assign your variable name to something you want to test. In the example my number is set to find 1 through 5. This test is meant to find CHARACTERS  not values. In real life you might look for a character in the data you are running such as "sample 1" or "California".
+To test the for loop assign your variable name to something you want to test. In the example my number is set to find 1 through 5. This test is meant to find CHARACTERS  not values. In real life you might look for a character in the data you are running such as "sample 1" or "California". It would look something like this:
 
+```
+my_state = {"California", "Florida", "Oregon", "Wyoming", "Virginia"}
+```
 # Where does my for loop go?
-It is a pretty good practice to make your function script successful and then make the for loop in a separate file. This way instead of remaking the entire function within the brackets of your loop, you can simply source the function and it will call it from the other file.
+It is a pretty good practice to make your function script successful and then make the for loop in a separate file. This way instead of remaking the entire function within the brackets of your loop, you can simply source the function and it will call it from the other file. Have an output directory set up so that the outputs of the for loop have a place that can be stored and processed by other functions.
 
 # In Conclusion
-For loops are a powerful tool which is incredibly helpful when you want to run the same operation on multiple different files.
+For loops are a powerful tool which is incredibly helpful when you want to run the same operation on multiple different files. In a bioinformatics pipeline it gives you the ability to run a specific function on multiple variables in sequence. Without it, you would need to run the function individually for each variable you wanted to run which, for larger datasets, is impractical. Thus, for loops are an effective tool to make your pipeline run much more smoothly. 
