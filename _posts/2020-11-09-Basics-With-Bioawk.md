@@ -55,8 +55,8 @@ Bioawk also has some built in functionality that bioinformaticians in particular
 
 `$ bioawk -c fastx '{print revcomp($seq)}' example.fasta | head -n 10`
 
-These are but a few of the ways you can introduce the Bioawk cuisine to your daily ~meals~ workflow.
+These are but a few of the ways you can introduce the Bioawk cuisine to your daily ~~meals~~ workflow.
 
 ## Final Tasting Notes
 
-Sometimes you head to your ~kitchen~ desk and you see a lot of things in your ~fridge~ code that are not appealing, consider ~ordering takeout~ googling stack overflow, and go back to the ~fridge~ code knowing very well that nothing has changed. But sometimes you _do_ check stack overflow and you realize there's a comment detailing Bioawk. Do yourself a favor and, consider adding Bioawk to your workflow. As soon as you start picking up the basics of Awk, you'll find yourself generating bioinformatics reports with ease using Bioawk!
+Sometimes you head to your ~~kitchen~~ desk and you see a lot of things in your ~~fridge~~ code that are not appealing, consider ~~ordering takeout~~ googling stack overflow, and go back to the ~~fridge~~ code knowing very well that nothing has changed. But sometimes you _do_ check stack overflow and you realize there's a comment detailing Bioawk. Do yourself a favor and, consider adding Bioawk to your workflow. As soon as you start picking up the basics of Awk, you'll find yourself generating bioinformatics reports with ease using Bioawk!
