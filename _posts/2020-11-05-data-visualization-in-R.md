@@ -73,7 +73,7 @@ name_of_plot
 Interpreting the script above based on inputs and commands:  
 1. `data = `
   * Here we are calling the dataset we want to use for the plot. The data set should be a csv or txt file that has already been read into the script and is called as a variable in this section of the plotting code.
-3. `aes`
+2. `aes`
   * This is where you specify how data is being plotted. Which data is going on the x, which data is going on the y. You can also opt to select for color, size, and and data point shape or transparency (depending what type of plot you choose these options differ slightly).
     * Within `aes` you a can also add a fill. You can use this when you are comparing two independent variable that have been grouped:
       * `ggplot(aes(x = city, y = count, fill = type))`
@@ -81,7 +81,7 @@ Interpreting the script above based on inputs and commands:
       * `ggplot(aes(x = independent_variable,
         y = dependent_variable)) +
         geom_boxplot(aes(color = independent_variable))`
-4. `geom_col`(aes(color = flower_type))
+3. `geom_col`(aes(color = flower_type))
   * In this example we are determining the type of figure to make, `geom_col` creates a column bar plot with the independent variable on the x-axis.
       * Substitute `geom_point` for a scatter plot
       * Example:
@@ -110,14 +110,14 @@ Interpreting the script above based on inputs and commands:
         labs(title = "Title",
         x = "Independent Variable",
         y = "Dependent Variable")`
-5. `position =`
+4. `position =`
   * In this sample script, `position_dodge` was used to group the bar plot by category. Depending on your ultimate figure goal, this may not be necessary for all bar plots. Occasionally a stacked position, the default, is better when using a grouped dataset.
-6. `labs`
+5. `labs`
   * Axis labels, can be set `title`, `x =`, and `y =`
-7. In `ggplot` to continue adding input, each section has to be connection with a '+'.
+6. In `ggplot` to continue adding input, each section has to be connection with a '+'.
   * Other input options could be the following:
     * `scale_fill_gradient(low = "color1", high = "color2")`: color 1 and color 2 are up to you to choose with in a ggplot color scheme. This function can be used when you selected a 'fill' option for grouped variables.
-    * `ggthemes` can be used as well for additional customization however it is not part of `ggplot2` and needs to be loaded separately with `library(ggthemes)`:
+    * `ggthemes` is a package that can be used as well for additional customization, some example include:
       * `theme_few()` will remove the gray background from plots as well as the grid
       * `theme(axis.text.x = element_text(angle = 0-180))` will rotate the text on the x axis between 0 and 180 degrees. The same can be done for values on the y axis.
 
