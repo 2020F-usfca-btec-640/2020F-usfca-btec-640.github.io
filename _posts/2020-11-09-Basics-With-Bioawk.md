@@ -16,7 +16,7 @@ Awk programs are, generally, built using the following recipe:
 
 `pattern {action}`
 
-The _pattern_ is an expression or regular expression patter, allowing people to filter for matched expressions, so that those only those patterns are acted upon. These _pattern-actions_ can be linked together into a chain by semicolons. By combining these two different concepts, _records_ and _fields_ with _pattern-actions_, Awk is able survey a file line by line and split those lines into fields, compare those lines and fields to a pattern, and perform actions on those patters to manipulate data and generate reports.
+The _pattern_ is an expression or regular expression pattern, allowing people to filter for matched expressions, so that those only those patterns are acted upon. These _pattern-actions_ can be linked together into a chain by semicolons. By combining these two different concepts, _records_ and _fields_ with _pattern-actions_, Awk is able to survey a file line by line and split those lines into fields, compare those lines and fields to a pattern, and perform actions on those patters to manipulate data and generate reports.
 
 Some common Awk functions are to filter reports and fields using RegEx, splitting strings (s) into tabular "chunks" with a specificed delimiter (d) and placing them into an array (x) via `split (s, x, d)`, `print` the content of the tabular data, changing the case of strings in a field via `tolower(s)` or `toupper(s)`
 
@@ -41,11 +41,11 @@ fastx:
 ```
 Bioawk code ~tastes~ is built similarly to Awk, but by using bioawk's built in tools, we can specify the filetype we are using with the following syntax, using FASTX as an example: `bioawk -c fastx`
 
-We will continue to FASTA/FASTQ files as an example moving forward. As mentioned above, Bioawk has built in tooling to scan a file and "chunk" parts of the sequence file into their appropriate fields, the name of the sequence (`$name`), the sequence itself `($seq)`, comments about the sequence such as what the gene does, what chromosome it is on, etc. (`$comment`), and finally FASTQ files have an additional field for quality data about the sequence (`qual`). If we wanted to print the comments of all the sequences in a FASTA file, we could write the following:
+We will continue to use FASTA/FASTQ files as an example moving forward. As mentioned above, Bioawk has built in tooling to scan a file and "chunk" parts of the sequence file into their appropriate fields, the name of the sequence (`$name`), the sequence itself `($seq)`, comments about the sequence such as what the gene does, what chromosome it is on, etc. (`$comment`), and finally FASTQ files have an additional field for quality data about the sequence (`qual`). If we wanted to print the comments of all the sequences in a FASTA file, we could write the following:
 
 `$ bioawk -c fasta '{print $comment}' example.fasta`
 
-We can use Bioaw's built-in Awk functions to further split the comments into tabular data and print them with the following recipe:
+We can use Bioawk's built-in Awk functions to further split the comments into tabular data and print them with the following recipe:
 
 `$ bioawk -c fasta '{split($comment,a,"|"); print a}' example.fasta | head -n 10`
 
