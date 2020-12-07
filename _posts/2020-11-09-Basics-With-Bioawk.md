@@ -5,7 +5,7 @@ date:   2020-11-09 4:45:00 -0800
 categories: Bioawk
 ---
 
-# Basics with ~Babish~ Bioawk!
+# Basics with ~~Babish~~ Bioawk!
 by Sahil Verma
 
 ## Taking the Awk out of Bioawk
@@ -47,7 +47,7 @@ We will continue to use FASTA/FASTQ files as an example moving forward. As menti
 
 We can use Bioawk's built-in Awk functions to further split the comments into tabular data and print them with the following recipe:
 
-`$ bioawk -c fasta '{split($comment,a,"|"); print a}' example.fasta | head -n 10`
+<code>$ bioawk -c fasta '{split($comment,a,"\|"); print a}' example.fasta | head -n 10</code>
 
 The above splits the comment of the sequences into tabular chunks, using "|" as the delimiter to separate chunks, and places them into an array, "a" and then print the first 10 rows of data using `head`.
 
@@ -55,8 +55,8 @@ Bioawk also has some built in functionality that bioinformaticians in particular
 
 `$ bioawk -c fastx '{print revcomp($seq)}' example.fasta | head -n 10`
 
-These are but a few of the ways you can introduce the Bioawk cuisine to your daily ~meals~ workflow.
+These are but a few of the ways you can introduce the Bioawk cuisine to your daily ~~meals~~ workflow.
 
 ## Final Tasting Notes
 
-Sometimes you head to your ~kitchen~ desk and you see a lot of things in your ~fridge~ code that are not appealing, consider ~ordering takeout~ googling stack overflow, and go back to the ~fridge~ code knowing very well that nothing has changed. But sometimes you _do_ check stack overflow and you realize there's a comment detailing Bioawk. Do yourself a favor and, consider adding Bioawk to your workflow. As soon as you start picking up the basics of Awk, you'll find yourself generating bioinformatics reports with ease using Bioawk!
+Sometimes you head to your ~~kitchen~~ desk and you see a lot of things in your ~~fridge~~ code that are not appealing, consider ~~ordering takeout~~ googling stack overflow, and go back to the ~~fridge~~ code knowing very well that nothing has changed. But sometimes you _do_ check stack overflow and you realize there's a comment detailing Bioawk. Do yourself a favor and, consider adding Bioawk to your workflow. As soon as you start picking up the basics of Awk, you'll find yourself generating bioinformatics reports with ease using Bioawk!
