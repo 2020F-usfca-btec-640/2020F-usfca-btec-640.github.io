@@ -55,7 +55,10 @@ Our last step will be to convert your masterpiece into an HTML link.
 3. Click Copy (or Save depending on what you desire) As HTML
 4. Paste the result wherever you need it
 
-# For more information...
+# Recap
+This guide walked you through how to set up Atom and download its accompanying packages. It also helped you understand how to create and open new files & become familiar with Atom's syntax tips and tricks. Lastly, it directed you on how to view your work as an HTML file and convert into one as well!
+
+# For more help...
 Please look into the following links for more assistance on how to download, set up, and explore Atom.
 1. [Installing Atom](https://www.youtube.com/watch?v=EyG20hhON6E)
 2. [Atom Settings & Preferences](https://www.youtube.com/watch?v=zYvMFtO71fk)
