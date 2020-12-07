@@ -49,7 +49,7 @@ We can use Bioawk's built-in Awk functions to further split the comments into ta
 
 <code>$ bioawk -c fasta '{split($comment,a,"\|"); print a}' example.fasta | head -n 10</code>
 
-The above splits the comment of the sequences into tabular chunks, using "|" as the delimiter to separate chunks, and places them into an array, "a" and then print the first 10 rows of data using `head`.
+The above splits the comment of the sequences into tabular chunks, using <code>|</code> as the delimiter to separate chunks, and places them into an array, "a" and then print the first 10 rows of data using `head`.
 
 Bioawk also has some built in functionality that bioinformaticians in particular will love so much, they'll come back for seconds! One of these functions is to reverse compliment a sequence using `revcomp()`.
 
