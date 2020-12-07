@@ -46,7 +46,6 @@ To do this: ```library(ggplot2)```
 ## Writing a script and data input
 The general format of a ggplot input is as follows:
 ```
-{r name_of_plot}
 name_of_plot <- ggplot(data = data_source,
                        aes(x = geo_type,
                            y = n,
@@ -72,16 +71,16 @@ name_of_plot
 ```
 
 Interpreting the script above based on inputs and commands:  
-1. `{r name_of_plot}`  
-  * In this command we are calling for R to create a plot with this specific title
-2. `data = `
-  * We have to read in the data file, the easiest way to do this is from a csv or txt file and prior to creating the figure set a variable equal to this file. This way you can call the variable and that will read in the data as opposed to giving the precise location of the data each time.
+1. `data = `
+  * Here we are calling the dataset we want to use for the plot. The data set should be a csv or txt file that has already been read into the script and is called as a variable in this section of the plotting code.
 3. `aes`
   * This is where you specify how data is being plotted. Which data is going on the x, which data is going on the y. You can also opt to select for color, size, and and data point shape or transparency (depending what type of plot you choose these options differ slightly).
     * Within `aes` you a can also add a fill. You can use this when you are comparing two independent variable that have been grouped:
       * `ggplot(aes(x = city, y = count, fill = type))`
     * Alternatively, you can also choose to identify different groups by using multiple colors based on the group ID:
-      * ``
+      * `ggplot(aes(x = independent_variable,
+        y = dependent_variable)) +
+        geom_boxplot(aes(color = independent_variable))`
 4. `geom_col`(aes(color = flower_type))
   * In this example we are determining the type of figure to make, `geom_col` creates a column bar plot with the independent variable on the x-axis.
       * Substitute `geom_point` for a scatter plot
@@ -114,12 +113,13 @@ Interpreting the script above based on inputs and commands:
 5. `position =`
   * In this sample script, `position_dodge` was used to group the bar plot by category. Depending on your ultimate figure goal, this may not be necessary for all bar plots. Occasionally a stacked position, the default, is better when using a grouped dataset.
 6. `labs`
-  * Axis labels, can be set `title`, `x=`, and `y=`
+  * Axis labels, can be set `title`, `x =`, and `y =`
 7. In `ggplot` to continue adding input, each section has to be connection with a '+'.
   * Other input options could be the following:
-    * `scale_fill_gradient(low = color1", high = "color2")`: color 1 and color 2 are up to you to choose with in a ggplot color scheme. This function can be used when you selected a 'fill' option for grouped variables.
-    * `theme_few()` will remove the gray background from plots as well as the grid
-    * `theme(axis.text.x = element_text(angle = 0-180))` will rotate the text on the x axis between 0 and 180 degrees. The same can be done for values on the y axis.
+    * `scale_fill_gradient(low = "color1", high = "color2")`: color 1 and color 2 are up to you to choose with in a ggplot color scheme. This function can be used when you selected a 'fill' option for grouped variables.
+    * `ggthemes` can be used as well for additional customization however it is not part of `ggplot2` and needs to be loaded separately with `library(ggthemes)`:
+      * `theme_few()` will remove the gray background from plots as well as the grid
+      * `theme(axis.text.x = element_text(angle = 0-180))` will rotate the text on the x axis between 0 and 180 degrees. The same can be done for values on the y axis.
 
 ## Customizing
 Beyond the type of figure you are creating, there are additional commands to create more detailed figures. Additionally, there are customizations such as color scheme, background color, font size etc.
