@@ -7,7 +7,7 @@ categories: defensive programming, assertions, pre-conditions, nulls
 # **Defensive programming - what it is and why it is important**
 Gabrielly Lunkes  
 
-![Dwight Schrute from The Office show saying "HE PROTEC"]({{site.url }}https://philippegroarke.com/img/2018/defensive.png)
+![Dwight Schrute from The Office show saying "HE PROTEC"](https://philippegroarke.com/img/2018/defensive.png)
 
 Often times, a piece of code is used by different people, not only the person who created it. Also, codes can frequently be used to process different types of data. In my opinion, this flexibility to use the same code to process different datasets is one of the greatest things about coding. However, how is it possible to write a complex code in a way that other users would be able to easily navigate through and even use it with different types of input without bugs? Yes, you guessed it, the answer is in defensive programming.
 
@@ -17,6 +17,7 @@ In short, defensive programming is a way to make sure that your code works even 
 ```r
 if (nrow(input_data) == 0) {
   stop("ERROR: Input data is empty. Did you make a typo?")
+}
 ```
 
 In this case, the code is checking if the input file actually has data in it. If the file is empty, it will show the message `ERROR: Input data is empty. Did you make a typo?`. Notice that the statement points out what went wrong and gives an idea of how to solve the problem.
@@ -98,9 +99,9 @@ Troubleshooting can take a lot of time, and it is probably part of every program
 
 I hope you enjoyed this post. Here are some sources with more interesting information about defensive programming, and some more examples of defensive programming methods:
 
-[Programming with Python: defensive programming](https://swcarpentry.github.io/python-novice-inflammation/10-defensive/index.html)  
-[The Ten Rules of Defensive Programming in R](https://www.r-bloggers.com/2018/07/the-ten-rules-of-defensive-programming-in-r/)  
-[The Art of Defensive Programming: Coping with Unseen Data](https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2018/1791-2018.pdf)
+* [Programming with Python: defensive programming](https://swcarpentry.github.io/python-novice-inflammation/10-defensive/index.html)  
+* [The Ten Rules of Defensive Programming in R](https://www.r-bloggers.com/2018/07/the-ten-rules-of-defensive-programming-in-r/)  
+* [The Art of Defensive Programming: Coping with Unseen Data](https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2018/1791-2018.pdf)
 
 ## References
 
