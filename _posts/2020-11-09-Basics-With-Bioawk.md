@@ -5,7 +5,7 @@ date:   2020-11-09 4:45:00 -0800
 categories: Bioawk
 ---
 
-# Basics with ~Babish~ Bioawk!
+# Basics with ~~Babish~~ Bioawk!
 by Sahil Verma
 
 ## Taking the Awk out of Bioawk
@@ -47,7 +47,7 @@ We will continue to use FASTA/FASTQ files as an example moving forward. As menti
 
 We can use Bioawk's built-in Awk functions to further split the comments into tabular data and print them with the following recipe:
 
-`$ bioawk -c fasta '{split($comment,a,"|"); print a}' example.fasta | head -n 10`
+`$ bioawk -c fasta '{split($comment,a,"&#124;"); print a}' example.fasta | head -n 10`
 
 The above splits the comment of the sequences into tabular chunks, using "|" as the delimiter to separate chunks, and places them into an array, "a" and then print the first 10 rows of data using `head`.
 
