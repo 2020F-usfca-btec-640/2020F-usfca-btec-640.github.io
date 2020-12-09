@@ -39,11 +39,13 @@ Since not all setups will be identical, and having several tools setup already i
 * Check `git config --list`
 
 #### Restore git session from different machine
-* Pull down branches made elsewhere `git pull`
+* Pull down changes made on the same branch `git pull`
+* Pull down changes made on branch `master` on the remote `origin` and integrate them into your local HEAD branch: `git pull origin master`
 * List branches `git branch -a`
 * Switch to a branch `git checkout example-branch`
 
 #### Manage persistent work sessions
+Tmux is essential in bioinformatics, where genome sequence files can be massive and take hours or days to process. Tmux creates a resilient work session that persists and will process your data continuously, even if the SSH connection is closed. It has a great [cheat sheet][cs]. It is also the topic of a great independent [blog post][tmuxblog].
  * List any open sessions `tmux ls`
  * Attach to existing session `tmux a <session if more than one>`
  * Create new session `tmux new -s session-name`
@@ -67,17 +69,15 @@ Since not all setups will be identical, and having several tools setup already i
 * git version control: [GitHub][github]
 * bash shell: [Git Bash][git-bash]
 * Session management: [Tmux][tmux]
- * Tmux is essential in bioinformatics, where genome sequence files can be massive and take hours or days to process.
- * Tmux creates a resilient work session that persists and will process your data continuously, even if the SSH connection is closed.
- * Tmux has a great [cheat sheet][cs]
 * Container admin: [Docker][docker]
 * SSH credentials: contact your IT admin
-* Instruction: thank you to our professor, Dr. Naupaka Zimmerman, for setting up our headless cloud access, and for teaching us the content of this tutorial. Check out his extensive [GitHub page][drz].
+* Instruction: Dr. Naupaka Zimmerman. Check out his extensive [GitHub page][drz]
 [usf]: https://www.usfca.edu/arts-sciences/graduate-programs/biotechnology
 [global-protect]: https://www.paloaltonetworks.com/products/globalprotect
 [github]:[https://github.com/]
 [git-bash]:[https://gitforwindows.org/]
 [tmux]:[https://github.com/tmux/tmux/wiki]
+[tmuxblog]:[https://github.com/2020F-usfca-btec-640/2020F-usfca-btec-640.github.io/blob/main/_posts/2020-11-07-What-is-Tmux.md]
 [cs]:[https://tmuxcheatsheet.com/]
 [docker]:[https://www.docker.com/]
 [drz]:[https://github.com/naupaka]
