@@ -2,7 +2,7 @@
 layout: post
 title:  "How to Scour the Internet for Help"
 date:   2020-11-09 12:54:04 -0700
-categories: jekyll update
+categories: internet coding help Google
 ---
 
 ![crying_at_computer.jpg](https://media.salon.com/2013/11/crying_computer_user.jpg)
@@ -15,7 +15,7 @@ Especially when you're just starting out. It can daunt you when there sits a bli
 
 ## Before You Start Coding
 
-When you begin to learn a coding language it benefits you to learn about the language before you start. Each language holds its own quirks with how it relays its error messages. Understanding what the language is trying to tell you with the error message goes a long way with tackling problems as they arise. 
+When you begin to learn a coding language it benefits you to learn about the language before you start. Each language holds its own quirks with how it relays its error messages. Understanding what the language is trying to tell you with the error message goes a long way with tackling problems as they arise.
 
 It helps to create a plan for what you hope to code before you actually code it. This simply involves writing out your code on paper instead of on the computer. Doing this helps you think through your process and lets you see what the entire project requires for completion.
 
